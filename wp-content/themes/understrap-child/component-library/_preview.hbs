@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ path '/img/favicon.ico' }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
-    <link media="all" rel="stylesheet" href="{{ path '/css/child-theme.min.css' }}">
-    <title>AATE Component Library | {{ _target.component.label }} Preview</title> 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ path '/img/favicon.ico' }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|Roboto+Condensed:400,400i,700,700i"
+    rel="stylesheet">
+  <link media="all" rel="stylesheet" href="{{ path '/css/child-theme.min.css' }}">
+  <title>AATE Component Library | {{ _target.component.label }} Preview</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
     // Google Font Loader
-      WebFont.load({
-        google: {
-          families: ['Roboto Condensed', 'Open Sans']
-        }
-      });
+    WebFont.load({
+      google: {
+        families: ['Roboto Condensed', 'Open Sans']
+      }
+    });
 
     // YouTube API loader
     var tag = document.createElement('script');
     tag.src = "//www.youtube.com/player_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-    </script>
+  </script>
 </head>
+
 <body>
 
-{{{ yield }}}
-  
+  {{{ yield }}}
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="{{ path '/js/child-theme.min.js' }}"></script>
 
-  
+
 </body>
+
 </html>
