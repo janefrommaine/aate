@@ -1,6 +1,32 @@
+/************************
+*
+*  AATE Custom Styles
+*
+*************************/
+
+// 1. Settings
+//    Any project variables that are used globally: colors, fonts, etc.
+@import "../_settings/colors";
+
+// 2. Tools
+//    Any mixins, animations, or functions used throughout the project.
+
+// 3. Generic
+//    This is where your reset/normalize & box-sizing styles go.
+//    If using Normalize, for example, rename the reset file to generic.normalize.scss
+
 // 4. Elements
 //    Bare HMTL elements are styled in this section (<h1>, <a>, <p>, etc.)
-@import '../../component-library/02-elements/buttons/buttons';
+@import "../../component-library/02-elements/buttons/buttons";
+
+// 5. Objects
+//    Non-cosmetic design patterns including grid and layout classes
 
 // 6. Components
-@import '../../component-library/03-components/main-menu/main-menu';
+@import "../../component-library/03-components/footer/footer";
+@import "../../component-library/03-components/header/header";
+@import "../../component-library/03-components/hero/hero";
+@import "../../component-library/03-components/main-menu/main-menu";
+
+// 7. Overrides
+//    Contains anything that overrides all other layers, ie8 fixes, utility and helper classes.

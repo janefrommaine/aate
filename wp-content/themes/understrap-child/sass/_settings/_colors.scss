@@ -1,0 +1,148 @@
+/* AATE Settings - Color */
+
+$aate-palette: (
+  blue: #3d79a8,
+  red: #cf102d,
+  dark-red: #b20f26,
+  //blue: #007cbb,
+    light-blue: #e1e7f0,
+  dark-blue: #0562a6,
+  light-green: #82ba23,
+  green: #248200,
+  dark-green: #217a00,
+  yellow: #ffbe3b,
+  dark-yellow: #f5b83d,
+  blue-12: rgba(12, 59, 136, 0.12),
+  blue-8: rgba(12, 59, 136, 0.08),
+  blue-4: rgba(12, 59, 136, 0.04),
+  black: #000000,
+  gray: #b1b3b6,
+  gray-medium: #747575,
+  gray-dark: #555555,
+  gray-darkest: #333333,
+  white: #ffffff
+);
+
+/* Color Palette to Variables
+*
+* This mixin transfers the colors in the `$aate-palette`map into variables, such as `$aate-red` and `$aate-dark-blue`.
+*/
+
+@mixin add-aate-colors() {
+  @if map-has-key($aate-palette, red) {
+    $aate-red: map-get($aate-palette, red) !global;
+    .aate-color-red {
+      background-color: $aate-red;
+    }
+  }
+  @if map-has-key($aate-palette, dark-red) {
+    $aate-dark-red: map-get($aate-palette, dark-red) !global;
+    .aate-color-dark-red {
+      background-color: $aate-dark-red;
+    }
+  }
+  @if map-has-key($aate-palette, blue) {
+    $aate-blue: map-get($aate-palette, blue) !global;
+    .aate-color-blue {
+      background-color: $aate-blue;
+    }
+  }
+  @if map-has-key($aate-palette, light-blue) {
+    $aate-light-blue: map-get($aate-palette, light-blue) !global;
+    .aate-color-light-blue {
+      background-color: $aate-light-blue;
+    }
+  }
+  @if map-has-key($aate-palette, dark-blue) {
+    $aate-dark-blue: map-get($aate-palette, dark-blue) !global;
+    .aate-color-dark-blue {
+      background-color: $aate-dark-blue;
+    }
+  }
+  @if map-has-key($aate-palette, blue-12) {
+    $aate-blue-12: map-get($aate-palette, blue-12) !global;
+    .aate-color-blue-12 {
+      background-color: $aate-blue-12;
+    }
+  }
+  @if map-has-key($aate-palette, blue-8) {
+    $aate-blue-8: map-get($aate-palette, blue-8) !global;
+    .aate-color-blue-8 {
+      background-color: $aate-blue-8;
+    }
+  }
+  @if map-has-key($aate-palette, blue-4) {
+    $aate-blue-4: map-get($aate-palette, blue-4) !global;
+    .aate-color-blue-4 {
+      background-color: $aate-blue-4;
+    }
+  }
+  @if map-has-key($aate-palette, light-green) {
+    $aate-light-green: map-get($aate-palette, light-green) !global;
+    .aate-color-light-green {
+      background-color: $aate-light-green;
+    }
+  }
+  @if map-has-key($aate-palette, green) {
+    $aate-green: map-get($aate-palette, green) !global;
+    .aate-color-green {
+      background-color: $aate-green;
+    }
+  }
+  @if map-has-key($aate-palette, dark-green) {
+    $aate-dark-green: map-get($aate-palette, dark-green) !global;
+    .aate-color-dark-green {
+      background-color: $aate-dark-green;
+    }
+  }
+  @if map-has-key($aate-palette, yellow) {
+    $aate-yellow: map-get($aate-palette, yellow) !global;
+    .aate-color-yellow {
+      background-color: $aate-yellow;
+    }
+  }
+  @if map-has-key($aate-palette, dark-yellow) {
+    $aate-dark-yellow: map-get($aate-palette, dark-yellow) !global;
+    .aate-color-dark-yellow {
+      background-color: $aate-dark-yellow;
+    }
+  }
+  @if map-has-key($aate-palette, black) {
+    $aate-black: map-get($aate-palette, black) !global;
+    .aate-color-black {
+      background-color: $aate-black;
+    }
+  }
+  @if map-has-key($aate-palette, gray-darkest) {
+    $aate-gray-darkest: map-get($aate-palette, gray-darkest) !global;
+    .aate-color-gray-darkest {
+      background-color: $aate-gray-darkest;
+    }
+  }
+  @if map-has-key($aate-palette, gray-dark) {
+    $aate-gray-dark: map-get($aate-palette, gray-dark) !global;
+    .aate-color-gray-dark {
+      background-color: $aate-gray-dark;
+    }
+  }
+  @if map-has-key($aate-palette, gray-medium) {
+    $aate-gray-medium: map-get($aate-palette, gray-medium) !global;
+    .aate-color-gray-medium {
+      background-color: $aate-gray-medium;
+    }
+  }
+  @if map-has-key($aate-palette, gray) {
+    $aate-gray: map-get($aate-palette, gray) !global;
+    .aate-color-gray {
+      background-color: $aate-gray;
+    }
+  }
+  @if map-has-key($aate-palette, white) {
+    $aate-white: map-get($aate-palette, white) !global;
+    .aate-color-white {
+      background-color: $aate-white;
+    }
+  }
+}
+
+@include add-aate-colors;

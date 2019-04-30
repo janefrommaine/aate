@@ -1,4 +1,66 @@
 @charset "UTF-8";
+/* AATE Settings - Color */
+/* Color Palette to Variables
+*
+* This mixin transfers the colors in the `$aate-palette`map into variables, such as `$aate-red` and `$aate-dark-blue`.
+*/
+.aate-color-red {
+  background-color: #cf102d; }
+
+.aate-color-dark-red {
+  background-color: #b20f26; }
+
+.aate-color-blue {
+  background-color: #3d79a8; }
+
+.aate-color-light-blue {
+  background-color: #e1e7f0; }
+
+.aate-color-dark-blue {
+  background-color: #0562a6; }
+
+.aate-color-blue-12 {
+  background-color: rgba(12, 59, 136, 0.12); }
+
+.aate-color-blue-8 {
+  background-color: rgba(12, 59, 136, 0.08); }
+
+.aate-color-blue-4 {
+  background-color: rgba(12, 59, 136, 0.04); }
+
+.aate-color-light-green {
+  background-color: #82ba23; }
+
+.aate-color-green {
+  background-color: #248200; }
+
+.aate-color-dark-green {
+  background-color: #217a00; }
+
+.aate-color-yellow {
+  background-color: #ffbe3b; }
+
+.aate-color-dark-yellow {
+  background-color: #f5b83d; }
+
+.aate-color-black {
+  background-color: #000000; }
+
+.aate-color-gray-darkest {
+  background-color: #333333; }
+
+.aate-color-gray-dark {
+  background-color: #555555; }
+
+.aate-color-gray-medium {
+  background-color: #747575; }
+
+.aate-color-gray {
+  background-color: #b1b3b6; }
+
+.aate-color-white {
+  background-color: #ffffff; }
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -19,7 +81,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #3D79A8;
+  --primary: #3d79a8;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -135,7 +197,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: #3D79A8;
+  color: #3d79a8;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
@@ -2539,8 +2601,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #3D79A8;
-  border-color: #3D79A8; }
+  background-color: #3d79a8;
+  border-color: #3d79a8; }
   .btn-primary:hover {
     color: #fff;
     background-color: #33658c;
@@ -2550,8 +2612,8 @@ fieldset:disabled a.btn {
             box-shadow: 0 0 0 0.2rem rgba(90, 141, 181, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #3D79A8;
-    border-color: #3D79A8; }
+    background-color: #3d79a8;
+    border-color: #3d79a8; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
@@ -2739,26 +2801,26 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary,
 .wpcf7 input[type=submit] {
-  color: #3D79A8;
-  border-color: #3D79A8; }
+  color: #3d79a8;
+  border-color: #3d79a8; }
   .btn-outline-primary:hover, .wpcf7 input:hover[type=submit] {
     color: #fff;
-    background-color: #3D79A8;
-    border-color: #3D79A8; }
+    background-color: #3d79a8;
+    border-color: #3d79a8; }
   .btn-outline-primary:focus,
   .wpcf7 input:focus[type=submit], .btn-outline-primary.focus, .wpcf7 input.focus[type=submit] {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 121, 168, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(61, 121, 168, 0.5); }
   .btn-outline-primary.disabled, .wpcf7 input.disabled[type=submit], .btn-outline-primary:disabled,
   .wpcf7 input:disabled[type=submit] {
-    color: #3D79A8;
+    color: #3d79a8;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .wpcf7 input:not(:disabled):not(.disabled):active[type=submit], .btn-outline-primary:not(:disabled):not(.disabled).active, .wpcf7 input:not(:disabled):not(.disabled).active[type=submit],
   .show > .btn-outline-primary.dropdown-toggle,
   .wpcf7 .show > input.dropdown-toggle[type=submit] {
     color: #fff;
-    background-color: #3D79A8;
-    border-color: #3D79A8; }
+    background-color: #3d79a8;
+    border-color: #3d79a8; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .wpcf7 input:not(:disabled):not(.disabled):active:focus[type=submit], .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .wpcf7 input:not(:disabled):not(.disabled).active:focus[type=submit],
     .show > .btn-outline-primary.dropdown-toggle:focus,
     .wpcf7 .show > input.dropdown-toggle:focus[type=submit] {
@@ -2928,7 +2990,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #3D79A8;
+  color: #3d79a8;
   text-decoration: none; }
   .btn-link:hover {
     color: #295170;
@@ -3170,7 +3232,7 @@ input[type="button"].btn-block {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #3D79A8; }
+    background-color: #3d79a8; }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -4098,8 +4160,8 @@ input[type="button"].btn-block {
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #3D79A8;
-    background-color: #3D79A8; }
+    border-color: #3d79a8;
+    background-color: #3d79a8; }
   .custom-control-input:focus ~ .custom-control-label::before {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(61, 121, 168, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(61, 121, 168, 0.25); }
@@ -4146,8 +4208,8 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e"); }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: #3D79A8;
-  background-color: #3D79A8; }
+  border-color: #3d79a8;
+  background-color: #3d79a8; }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e"); }
@@ -4323,7 +4385,7 @@ input[type="button"].btn-block {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #3D79A8;
+    background-color: #3d79a8;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4349,7 +4411,7 @@ input[type="button"].btn-block {
   .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #3D79A8;
+    background-color: #3d79a8;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4378,7 +4440,7 @@ input[type="button"].btn-block {
     margin-top: 0;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
-    background-color: #3D79A8;
+    background-color: #3d79a8;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -4482,7 +4544,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #3D79A8; }
+  background-color: #3d79a8; }
 
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
@@ -5095,7 +5157,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #3D79A8;
+  color: #3d79a8;
   background-color: #fff;
   border: 1px solid #dee2e6; }
   .page-link:hover {
@@ -5122,8 +5184,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #3D79A8;
-  border-color: #3D79A8; }
+  background-color: #3d79a8;
+  border-color: #3d79a8; }
 
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -5192,7 +5254,7 @@ input[type="button"].btn-block {
 
 .badge-primary {
   color: #fff;
-  background-color: #3D79A8; }
+  background-color: #3d79a8; }
   a.badge-primary:hover, a.badge-primary:focus {
     color: #fff;
     background-color: #2f5e83; }
@@ -5422,7 +5484,7 @@ input[type="button"].btn-block {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #3D79A8;
+  background-color: #3d79a8;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease; }
   @media (prefers-reduced-motion: reduce) {
@@ -5500,8 +5562,8 @@ input[type="button"].btn-block {
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #3D79A8;
-    border-color: #3D79A8; }
+    background-color: #3d79a8;
+    border-color: #3d79a8; }
 
 .list-group-horizontal {
   -webkit-box-orient: horizontal;
@@ -6408,7 +6470,7 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #3D79A8 !important; }
+  background-color: #3d79a8 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -6508,7 +6570,7 @@ button.bg-dark:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #3D79A8 !important; }
+  border-color: #3d79a8 !important; }
 
 .border-secondary {
   border-color: #6c757d !important; }
@@ -9036,7 +9098,7 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #3D79A8 !important; }
+  color: #3d79a8 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
   color: #295170 !important; }
@@ -9249,7 +9311,7 @@ a.skip-link {
   .navbar-dark .navbar-nav .dropdown-menu .nav-link.active, .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
     color: #fff !important;
     text-decoration: none;
-    background-color: #3D79A8; }
+    background-color: #3d79a8; }
   .navbar-dark .navbar-nav .dropdown-menu .nav-link.disabled, .navbar-dark .navbar-nav .dropdown-menu .nav-link:disabled {
     color: #6c757d !important;
     background-color: transparent; }
@@ -9267,15 +9329,29 @@ a.skip-link {
 .navbar h1 {
   font-weight: 400; }
 
-.woocommerce-input-wrapper {
-  width: 100%; }
-
-figure.woocommerce-product-gallery__wrapper {
-  max-width: inherit !important; }
-
-@media (min-width: 768px) {
-  #coupon_code.input-text {
-    width: 110px !important; } }
+/*
+* Use existing Bootstrap 4 classes and
+* variables to extend - override CF7 style
+*
+* Useful CF7 classes:
+* .wpcf7 the wrapper element
+* .wpcf7-form
+* .wpcf7-form-control
+* .wpcf7-text
+* .wpcf7-email
+* .wpcf7-textarea
+* .wpcf7-submit
+*/
+.wpcf7 {
+  max-width: 600px;
+  margin: 0 auto !important; }
+  .wpcf7 .wpcf7-form label {
+    width: 100%; }
+  .wpcf7 .wpcf7-not-valid-tip {
+    color: #dc3545; }
+  .wpcf7 .wpcf7-validation-errors {
+    color: #dc3545;
+    border: 1px solid #e9ecef; }
 
 /*!
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -11612,10 +11688,77 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
+/************************
+*
+*  AATE Custom Styles
+*
+*************************/
+/* AATE Settings - Color */
+/* Color Palette to Variables
+*
+* This mixin transfers the colors in the `$aate-palette`map into variables, such as `$aate-red` and `$aate-dark-blue`.
+*/
+.aate-color-red {
+  background-color: #cf102d; }
+
+.aate-color-dark-red {
+  background-color: #b20f26; }
+
+.aate-color-blue {
+  background-color: #3d79a8; }
+
+.aate-color-light-blue {
+  background-color: #e1e7f0; }
+
+.aate-color-dark-blue {
+  background-color: #0562a6; }
+
+.aate-color-blue-12 {
+  background-color: rgba(12, 59, 136, 0.12); }
+
+.aate-color-blue-8 {
+  background-color: rgba(12, 59, 136, 0.08); }
+
+.aate-color-blue-4 {
+  background-color: rgba(12, 59, 136, 0.04); }
+
+.aate-color-light-green {
+  background-color: #82ba23; }
+
+.aate-color-green {
+  background-color: #248200; }
+
+.aate-color-dark-green {
+  background-color: #217a00; }
+
+.aate-color-yellow {
+  background-color: #ffbe3b; }
+
+.aate-color-dark-yellow {
+  background-color: #f5b83d; }
+
+.aate-color-black {
+  background-color: #000000; }
+
+.aate-color-gray-darkest {
+  background-color: #333333; }
+
+.aate-color-gray-dark {
+  background-color: #555555; }
+
+.aate-color-gray-medium {
+  background-color: #747575; }
+
+.aate-color-gray {
+  background-color: #b1b3b6; }
+
+.aate-color-white {
+  background-color: #ffffff; }
+
 /* Buttons */
-body {
-  background: pink;
-  font-size: 26px; }
+.aate-hero {
+  padding: 2rem;
+  background: linear-gradient(135deg, #0079bf, #5067c5); }
 
 /* Main Menu */
 .aate-logo a {
@@ -11625,29 +11768,5 @@ body {
   height: auto;
   max-width: 75px;
   width: 100%; }
-
-/*
-* Use existing Bootstrap 4 classes and
-* variables to extend - override CF7 style
-*
-* Useful CF7 classes:
-* .wpcf7 the wrapper element
-* .wpcf7-form
-* .wpcf7-form-control
-* .wpcf7-text
-* .wpcf7-email
-* .wpcf7-textarea
-* .wpcf7-submit
-*/
-.wpcf7 {
-  max-width: 600px;
-  margin: 0 auto !important; }
-  .wpcf7 .wpcf7-form label {
-    width: 100%; }
-  .wpcf7 .wpcf7-not-valid-tip {
-    color: #dc3545; }
-  .wpcf7 .wpcf7-validation-errors {
-    color: #dc3545;
-    border: 1px solid #e9ecef; }
 
 /*# sourceMappingURL=child-theme.css.map */

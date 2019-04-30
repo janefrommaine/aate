@@ -261,3 +261,7 @@ gulp.task('fractal:start', function(){
         logger.success(`Fractal server is now running`);
     });
 });
+
+// Develop with Browser-Sync & Fractal to watch files and inject changes
+gulp.task('develop', gulp.series('fractal:start', 'watch'));
+
