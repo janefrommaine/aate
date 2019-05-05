@@ -1,55 +1,152 @@
-*~
-.DS_Store
-.svn
-.cvs
+# environment vars
+.env
+
+# temp files, OS junk and dotfiles
 *.bak
 *.swp
+*.tmp
+*~
+.cvs
+.DS_Store
+.listing
+.svn
 Thumbs.db
 
-# wordpress specific
+# wp core (as of 4.6)
+/db-config.php
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-admin
+/wp-app.php
+/wp-atom.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-commentsrss2.php
+/wp-config-sample.php
+/wp-content/index.php
+/wp-content/plugins/akismet
+/wp-content/plugins/hello.php
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-content/themes/argent
+/wp-content/themes/button
+/wp-content/themes/dyad
+/wp-content/themes/illustratr
+/wp-content/themes/kelly
+/wp-content/themes/libre
+/wp-content/themes/orvis
+/wp-content/themes/resonar
+/wp-content/themes/scraw
+/wp-content/themes/scrawl
+/wp-content/themes/sela
+/wp-content/themes/sketch
+/wp-content/themes/twenty*
+/wp-cron.php
+/wp-feed.php
+/wp-includes
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-pass.php
+/wp-rdf.php
+/wp-register.php
+/wp-rss.php
+/wp-rss2.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# wordpress config, user-content and caches
+cache/
+sitemap.xml
+sitemap.xml.gz
 wp-config.php
-wp-content/uploads/
-wp-content/blogs.dir/
-wp-content/upgrade/*
-wp-content/backup-db/*
 wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir
+wp-content/cache/
+wp-content/cache/supercache/
+wp-content/managewp/
+wp-content/upgrade/
+wp-content/uploads/
 wp-content/wp-cache-config.php
-wp-content/cache/*
-wp-content/cache/supercache/*
+
+# WordPress debugging files & logs
+*.log
+debug.log
+log.txt
+logs/
+
+# Third-party files and leftovers
+gt-cache/
+ics-importer-cache/
+imagecache.*
+pclzip-*.gz
+wp-content/w3-.*
+wp-content/w3tc.*
+gallery/*
+album/*
+
+# Backups
+wp-snapshots/*
+
+# This should never happen
+wp-content/plugins/plugins
+
+# flywheel specific
+wp-content/flywheel-config/
 
 # large/disallowed file types
 # a CDN should be used for these
-*.hqx
+*.3gp
+*.3gpp
+*.asf
+*.asx
+*.avi
 *.bin
-*.exe
-*.dll
 *.deb
+*.dll
 *.dmg
-*.iso
+*.exe
+*.flv
+*.hqx
 *.img
-*.msi
-*.msp
-*.msm
+*.iso
+*.kar
+*.m4a
+*.m4v
 *.mid
 *.midi
-*.kar
+*.mng
+*.mov
 *.mp3
-*.ogg
-*.m4a
-*.ra
-*.3gpp
-*.3gp
 *.mp4
 *.mpeg
 *.mpg
-*.mov
+*.msi
+*.msm
+*.msp
+*.ogg
+*.ra
 *.webm
-*.flv
-*.m4v
-*.mng
-*.asx
-*.asf
 *.wmv
-*.avi
+
+# don't commit database dumpfiles
+*.sql
+
+# javascript ate the world
+node_modules/
+
+# Let's try ignoring sourcemaps
+*.css.map
+*.js.map
+
+# Ignore all plugins
+wp-content/plugins
 
 # AATE theme specific
