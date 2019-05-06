@@ -1,49 +1,122 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<div id="wrapper-navbar" class="aate-navbar">
+	<nav class="navbar navbar-expand-md navbar-light">
 
-    <div class="container">
+		<div class="container">
 
-        <!-- Your site title as branding in the menu -->				
-        <div class="aate-logo navbar-brand mb-0">
-            <a rel="home" href="#" title="AATE" itemprop="url"><img src="{{ path '/img/logo-aate_white.svg' }}" alt="AATE Logo"></a>
-        </div>
-        <div class="aate-logo navbar-brand mb-0">
-            <a rel="home" href="#" title="AATE" itemprop="url"><img src="{{ path '/img/logo-aate.svg' }}" alt="AATE Logo"></a>
-        </div>
-        <!-- end custom logo -->
+			<!-- Your site title as branding in the menu
+			<div class="navbar-brand mb-0">
+				<a rel="home" href="#" title="AATE" itemprop="url"><img src="{{ path '/img/logo-aate_white.svg' }}"
+						alt="AATE Logo"></a>
+			</div> -->
+			<div class="navbar-brand mb-0">
+				<a rel="home" href="#" title="AATE" itemprop="url"><img src="{{ path '/img/logo-aate.svg' }}"
+						alt="AATE Logo"></a>
+			</div>
+			<!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<div class="aate-nav-container">
+				<div class="aate-top-menu">
+					<ul id="top-menu" class="navbar-nav ml-auto">
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-92"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92 nav-item"><a
+								title="Membership"
+								href="http://associationforathletictraini-109feac8ba0083af7244.local/membership/"
+								class="nav-link">Membership</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-90"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90 nav-item"><a
+								title="Jobs"
+								href="http://associationforathletictraini-109feac8ba0083af7244.local/job-listings/"
+								class="nav-link">Jobs</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-91"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91 nav-item"><a
+								title="Contact"
+								href="http://associationforathletictraini-109feac8ba0083af7244.local/contact/"
+								class="nav-link">Contact</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-89"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89 nav-item"><a
+								title="Login"
+								href="http://associationforathletictraini-109feac8ba0083af7244.local/login/"
+								class="nav-link">Login</a></li>
+					</ul>
+				</div>
 
 				<!-- The WordPress Menu goes here -->
-				<div id="navbarNavDropdown" class="collapse navbar-collapse"><ul id="main-menu" class="navbar-nav ml-auto"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1639 nav-item"><a title="Unit Test Pages" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1639">Unit Test Pages</a>
-<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1639" role="menu">
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697 nav-item"><a title="Page Image Alignment" href="https://understrap.com/understrap/?page_id=1133" class="dropdown-item">Page Image Alignment</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698 nav-item"><a title="Page Markup And Formatting" href="https://understrap.com/understrap/?page_id=1134" class="dropdown-item">Page Markup And Formatting</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640 nav-item"><a title="Clearing Floats" href="https://understrap.com/understrap/?page_id=501" class="dropdown-item">Clearing Floats</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641 nav-item"><a title="Page with comments" href="https://understrap.com/understrap/?page_id=155" class="dropdown-item">Page with comments</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642 nav-item"><a title="Page with comments disabled" href="https://understrap.com/understrap/?page_id=156" class="dropdown-item">Page with comments disabled</a></li>
-</ul>
-</li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1743 nav-item"><a title="Page Templates" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1743">Page Templates</a>
-<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1743" role="menu">
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703 nav-item"><a title="Page with Sidebar" href="https://understrap.com/understrap/?page_id=733" class="dropdown-item">Page with Sidebar</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1704 nav-item"><a title="Page without sidebar" href="https://understrap.com/understrap/?page_id=735" class="dropdown-item">Page without sidebar</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1744 nav-item"><a title="Empty Page Template" href="https://understrap.com/understrap/?page_id=1736" class="dropdown-item">Empty Page Template</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1762 nav-item"><a title="Blank Page Template" href="https://understrap.com/understrap/?page_id=1758" class="dropdown-item">Blank Page Template</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1769 nav-item"><a title="Left Sidebar Template" href="https://understrap.com/understrap/?page_id=1767" class="dropdown-item">Left Sidebar Template</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1757 nav-item"><a title="Sample Gallery" href="https://understrap.com/understrap/?page_id=1752" class="dropdown-item">Sample Gallery</a></li>
-</ul>
-</li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1785 nav-item"><a title="Single Link" href="https://understrap.com/understrap/?page_id=2" class="nav-link">Single Link</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1812 nav-item"><a title="Shop" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-1812">Shop</a>
-<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1812" role="menu">
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1816 nav-item"><a title="Shop" href="https://understrap.com/understrap/?page_id=1798" class="dropdown-item">Shop</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1813 nav-item"><a title="My Account" href="https://understrap.com/understrap/?page_id=1801" class="dropdown-item">My Account</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1814 nav-item"><a title="Checkout" href="https://understrap.com/understrap/?page_id=1800" class="dropdown-item">Checkout</a></li>
-	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-1815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1815 nav-item"><a title="Cart" href="https://understrap.com/understrap/?page_id=1799" class="dropdown-item">Cart</a></li>
-</ul>
-</li>
-</ul></div>						</div><!-- .container -->
-			
-		</nav><!-- .site-navigation -->
+				<div id="navbarNavDropdown" class="aate-main-menu collapse navbar-collapse">
+					<ul id="main-menu" class="navbar-nav">
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-1639"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1639 nav-item">
+							<a title="Unit Test Pages" href="#" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false" class="dropdown-toggle nav-link"
+								id="menu-item-dropdown-1639">About</a>
+							<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-1639" role="menu">
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+									id="menu-item-1697"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1697 nav-item">
+									<a title="Page Image Alignment"
+										href="https://understrap.com/understrap/?page_id=1133"
+										class="dropdown-item">Page Image Alignment</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+									id="menu-item-1698"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698 nav-item">
+									<a title="Page Markup And Formatting"
+										href="https://understrap.com/understrap/?page_id=1134"
+										class="dropdown-item">Page
+										Markup
+										And Formatting</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+									id="menu-item-1640"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640 nav-item">
+									<a title="Clearing Floats" href="https://understrap.com/understrap/?page_id=501"
+										class="dropdown-item">Clearing Floats</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+									id="menu-item-1641"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641 nav-item">
+									<a title="Page with comments" href="https://understrap.com/understrap/?page_id=155"
+										class="dropdown-item">Page with comments</a></li>
+								<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+									id="menu-item-1642"
+									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642 nav-item">
+									<a title="Page with comments disabled"
+										href="https://understrap.com/understrap/?page_id=156" class="dropdown-item">Page
+										with
+										comments disabled</a></li>
+							</ul>
+						</li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-1785"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1785 nav-item"><a
+								title="Single Link" href="https://understrap.com/understrap/?page_id=2"
+								class="nav-link">Research</a></li>
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-1786"
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1786 nav-item"><a
+								title="Single Link" href="https://understrap.com/understrap/?page_id=2"
+								class="nav-link">Conference</a></li>
+
+						<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+							id="menu-item-96"
+							class="aate-menu-button menu-item menu-item-type-post_type menu-item-object-page menu-item-96 nav-item">
+							<a title="Become a Member"
+								href="http://associationforathletictraini-109feac8ba0083af7244.local/join/"
+								class="nav-link">Become a Member</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div><!-- .container -->
+
+	</nav><!-- .site-navigation -->
+</div>

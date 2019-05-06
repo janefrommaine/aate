@@ -100,6 +100,7 @@ wp-content/plugins/plugins
 
 # flywheel specific
 wp-content/flywheel-config/
+wp-content/mu-plugins/local-by-flywheel-demo-urls.php
 
 # large/disallowed file types
 # a CDN should be used for these
