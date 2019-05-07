@@ -1,0 +1,43 @@
+{
+    "key": "group_5cd0ccfaad55c",
+    "title": "Hero",
+    "fields": [
+        {
+            "key": "field_5cd0d3083ac46",
+            "label": "Overview",
+            "name": "hero_overview",
+            "type": "text",
+            "instructions": "Text that appears after the page's main title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Subhead\/Hero section of each page",
+    "modified": 1557189738
+}
