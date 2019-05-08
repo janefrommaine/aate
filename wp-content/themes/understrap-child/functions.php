@@ -35,8 +35,12 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 function register_menus() {
     register_nav_menus(
       array(
-        'secondary-menu' => __( 'Secondary Menu' )
+        'secondary-menu' => __( 'Secondary Menu' ),
+        'footer-menu' => __( 'Footer Menu' ),
       )
     );
   }
   add_action( 'init', 'register_menus' );
+
+// Customizer functions
+require_once(get_stylesheet_directory() . '/functions/customizer.php');

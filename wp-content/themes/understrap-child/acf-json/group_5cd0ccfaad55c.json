@@ -1,11 +1,11 @@
 {
     "key": "group_5cd0ccfaad55c",
-    "title": "Hero",
+    "title": "Main Banner",
     "fields": [
         {
             "key": "field_5cd0d3083ac46",
-            "label": "Overview",
-            "name": "hero_overview",
+            "label": "Banner Intro",
+            "name": "hero_intro",
             "type": "text",
             "instructions": "Text that appears after the page's main title.",
             "required": 0,
@@ -20,6 +20,78 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5cd1d1e71f6af",
+            "label": "Banner Image",
+            "name": "hero_image",
+            "type": "image",
+            "instructions": "Select a banner image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5cd1d85a7f91f",
+            "label": "",
+            "name": "hero_include_cta",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Include CTA Button",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cd1d92e6ca17",
+            "label": "Banner Button Link",
+            "name": "hero_button",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cd1d85a7f91f",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_5b6b823074741"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1
         }
     ],
     "location": [
@@ -36,8 +108,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "featured_image"
+    ],
     "active": 1,
-    "description": "Subhead\/Hero section of each page",
-    "modified": 1557189738
+    "description": "Banner\/Hero section of each page",
+    "modified": 1557257694
 }

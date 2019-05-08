@@ -12,17 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
-
-        <div class="aate-hero" role="banner">
-            <div class="container pt-7 pb-6 text-white">
-                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                <p class="lead">Welcome to the Association for Athletic Training Education.</p>
-            </div>
-        </div>
-
-
-		
-
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>

@@ -1,0 +1,137 @@
+{
+    "key": "group_5b6b823074741",
+    "title": "Link (Internal\/External)",
+    "fields": [
+        {
+            "key": "field_5b6b825e244ca",
+            "label": "Link Type",
+            "name": "link_type",
+            "type": "radio",
+            "instructions": "Choose what kind of link this is",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Internal": "Internal",
+                "External": "External"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "Internal",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5b6b82c8244cc",
+            "label": "Link URL",
+            "name": "link_url",
+            "type": "url",
+            "instructions": "Enter external URL",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b6b825e244ca",
+                        "operator": "==",
+                        "value": "External"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "ex. http:\/\/www.google.com"
+        },
+        {
+            "key": "field_5b6b8340244cf",
+            "label": "Link URL",
+            "name": "link_url",
+            "type": "page_link",
+            "instructions": "Pick the page\/post\/media you would like to link to",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5b6b825e244ca",
+                        "operator": "==",
+                        "value": "Internal"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_5b6b83b9244d0",
+            "label": "Link Text",
+            "name": "link_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "ex. Go to the About page",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b87ff0cdafe1",
+            "label": "Link Title Text",
+            "name": "link_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Fields for external\/internal link picker",
+    "modified": 1557255696
+}

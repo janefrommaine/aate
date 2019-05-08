@@ -12,35 +12,54 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $container = get_theme_mod( 'understrap_container_type' );
+$footer_logo = get_theme_mod( 'understrap_footer_logo' );
+$footer_text = get_theme_mod( 'understrap_footer_text' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="aate-footer wrapper" id="wrapper-footer">
+<footer class="aate-footer">
+    <div class="container">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+        <div class="row">
+            <div class="col-md-2">
+				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+					<img class="aate-footer_logo" src="<?php echo $footer_logo ?>">
+				</a>	
+            </div>
+            <div class="col-md-10">
+				<nav class="navbar navbar-expand-md navbar-dark">
+					<!-- The Footer Menu goes here -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'footer-menu',
+							'container_class' => 'aate-footer-menu',
+							'container_id'    => '',
+							'menu_class'      => 'navbar-nav ml-auto',
+							'fallback_cb'     => '',
+							'menu_id'         => 'footer-menu',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					); ?>
+				</nav>
+            </div>
+        </div><!-- row end -->
 
-		<div class="row">
+        <div class="row">
+            <div class="col text-right">
+                <p class="address-box">
+                    Association for Athletic Training Education, Inc.<br />
+                    7613 Elmwood Avenue<br />
+                    PO Box 620762<br />
+					Middleton, WI 53562
+					<?php echo $footer_text ?>
+                </p>
+            </div>
+        </div><!-- row end -->
 
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
+    </div><!-- container end -->
+</footer>
 
 </div><!-- #page we need this extra closing tag here -->
 

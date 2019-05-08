@@ -35,7 +35,7 @@
 
   img {
     height: auto;
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
   }
 }
@@ -129,11 +129,13 @@
 }
 
 // Nav link hover effects
-.aate-main-menu .menu-item:not(.aate-menu-button) .nav-link {
+.aate-main-menu .menu-item:not(.aate-menu-button)  {
   @include media-breakpoint-up(sm) {
-    position: relative;
+    .nav-link {
+      position: relative;
+    }
 
-    &:after {
+    .nav-link:after {
       position: absolute;
       top: 100%;
       left: 0;
@@ -143,13 +145,14 @@
       content: "";
       opacity: 0;
       transition: opacity 0.3s, transform 0.3s;
-      transform: translateY(0px);
+      transform: translateY(-5px);
     }
 
-    &:hover::after,
-    &:focus::after {
+    &.active > .nav-link::after,
+    .nav-link:hover::after,
+    .nav-link:focus::after {
       opacity: 1;
-      transform: translateY(5px);
+      transform: translateY(0px);
     }
   }
 }
@@ -197,7 +200,7 @@
   }
 }
 
-li.aate-menu-button {
+.aate-main-menu li.aate-menu-button {
   a {
     @extend .btn;
     @extend .btn-primary;
