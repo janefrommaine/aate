@@ -15,7 +15,7 @@
 }
 
 .aate-footer_logo {
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .aate-footer-menu {
@@ -50,11 +50,10 @@
   @extend .btn-outline-light;
   border-width: 3px;
   color: $white;
-  
+
   &:active,
   &:focus,
   &:hover {
     color: #000000;
   }
 }
-

@@ -28,6 +28,10 @@
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
 }
 
+.navbar > .container {
+  align-items: flex-end;
+}
+
 .navbar-brand {
   a {
     display: inline-block;
@@ -37,6 +41,9 @@
     height: auto;
     max-width: 100px;
     width: 100%;
+    @include media-breakpoint-up(sm) {
+      max-width: 180px;
+    }
   }
 }
 
@@ -93,10 +100,14 @@
 }
 
 .navbar-collapse {
+  margin-top: 1rem;
   border-top: 1px solid lightgray;
+  padding-bottom: 1.5rem;
 
   @include media-breakpoint-up(sm) {
     border-top: none;
+    margin-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -129,7 +140,7 @@
 }
 
 // Nav link hover effects
-.aate-main-menu .menu-item:not(.aate-menu-button)  {
+.aate-main-menu .menu-item:not(.aate-menu-button) {
   @include media-breakpoint-up(sm) {
     .nav-link {
       position: relative;
@@ -141,7 +152,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(#f0632a, 0.2);
       content: "";
       opacity: 0;
       transition: opacity 0.3s, transform 0.3s;
@@ -176,7 +187,7 @@
     justify-content: flex-end;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     display: block;
   }
 }
@@ -194,7 +205,7 @@
   .menu-item:not(.aate-menu-button):not(.aate-mobile-menu-item) {
     //border-bottom: 1px solid gray;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       border-bottom: none;
     }
   }
@@ -207,7 +218,7 @@
     color: $white !important;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     margin-left: auto;
   }
 }
@@ -217,7 +228,7 @@ li.aate-mobile-menu-item {
   font-size: 1.15rem;
   border-bottom: none;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     display: none;
   }
 }

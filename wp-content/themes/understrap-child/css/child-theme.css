@@ -11992,6 +11992,11 @@ a[class*="btn-outline-"] {
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0; }
 
+.navbar > .container {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .navbar-brand a {
   display: inline-block; }
 
@@ -11999,6 +12004,9 @@ a[class*="btn-outline-"] {
   height: auto;
   max-width: 100px;
   width: 100%; }
+  @media (min-width: 576px) {
+    .navbar-brand img {
+      max-width: 180px; } }
 
 .navbar-light .navbar-toggler .icon-bar {
   background: #000000; }
@@ -12040,10 +12048,14 @@ a[class*="btn-outline-"] {
             transform: rotate(0); }
 
 .navbar-collapse {
-  border-top: 1px solid lightgray; }
+  margin-top: 1rem;
+  border-top: 1px solid lightgray;
+  padding-bottom: 1.5rem; }
   @media (min-width: 576px) {
     .navbar-collapse {
-      border-top: none; } }
+      border-top: none;
+      margin-top: 0;
+      padding-bottom: 0; } }
 
 /*
 .navbar-nav .dropdown-menu {
@@ -12079,7 +12091,7 @@ a[class*="btn-outline-"] {
     left: 0;
     width: 100%;
     height: 4px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(240, 99, 42, 0.2);
     content: "";
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -12112,7 +12124,7 @@ a[class*="btn-outline-"] {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .aate-top-menu {
       display: block; } }
 
@@ -12125,14 +12137,14 @@ a[class*="btn-outline-"] {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .aate-main-menu .menu-item:not(.aate-menu-button):not(.aate-mobile-menu-item) {
       border-bottom: none; } }
 
 .aate-main-menu li.aate-menu-button a {
   color: #fff !important; }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .aate-main-menu li.aate-menu-button {
     margin-left: auto; } }
 
@@ -12140,7 +12152,7 @@ li.aate-mobile-menu-item {
   display: block;
   font-size: 1.15rem;
   border-bottom: none; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     li.aate-mobile-menu-item {
       display: none; } }
 
@@ -12175,7 +12187,7 @@ a:active {
       text-align: initial; } }
 
 .aate-footer_logo {
-  max-width: 200px; }
+  max-width: 150px; }
 
 .aate-footer-menu {
   width: 100%; }
@@ -12238,6 +12250,127 @@ div.aate-skew > * {
   top: 50%;
   -webkit-transform: skew(10deg) rotate(-6deg) translateY(-50%);
           transform: skew(10deg) rotate(-6deg) translateY(-50%); }
+
+.aate-hero-two {
+  background: #3d79a8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23f0ebf7' fill-opacity='0.3'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"), linear-gradient(135deg, #3d79a8, #37b9b9);
+  background-color: #3d79a8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2337b9b9' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"), linear-gradient(135deg, #3d79a8, #37b9b9); }
+
+.aate-hero-two h1 {
+  text-shadow: 5px 3px 0 rgba(0, 0, 0, 0.15); }
+
+/*
+.skew {
+  transform: skew(20deg);
+  height: 100%;
+  overflow: hidden;
+}
+
+.skew img {
+  transform: skew(-20deg);
+}
+*/
+.skew-wrapper {
+  height: 100%; }
+
+.skew {
+  position: relative;
+  margin-left: 100px;
+  -webkit-transform: skew(-30deg, 0deg);
+          transform: skew(-30deg, 0deg);
+  /*outline:1px solid #fff;*/
+  height: 100%;
+  overflow: hidden;
+  background: rgba(225, 225, 225, 0.25);
+  border-left: 15px solid rgba(255, 255, 255, 0.25); }
+
+.skew .unskew {
+  left: -70px;
+  background-image: url("https://s30451.pcdn.co/wp-content/uploads/2018/07/Catra-Cropped-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  height: 200px;
+  -webkit-transform: skew(30deg, 0deg);
+          transform: skew(30deg, 0deg);
+  height: 100%; }
+
+.skew img {
+  position: absolute;
+  left: auto;
+  -webkit-transform: skew(30deg, 0deg);
+          transform: skew(30deg, 0deg);
+  min-height: 100%;
+  width: 100%; }
+
+.aate-hero-three {
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1490' height='1241.7' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.04'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+  /* linear-gradient(
+      to right,
+      rgba(255, 0, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );*/ }
+
+.aate-hero-three::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%2337b9b9' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(135deg, $aate-blue, #37b9b9);*/
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 50%); }
+
+.aate-hero-three h1 {
+  letter-spacing: 2px; }
+
+/*
+  .skew {
+    transform: skew(20deg);
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .skew img {
+    transform: skew(-20deg);
+  }
+  */
+.skew-wrapper {
+  height: 100%; }
+
+.skew-3 {
+  position: relative;
+  margin-left: 100px;
+  -webkit-transform: skew(-30deg, 0deg);
+          transform: skew(-30deg, 0deg);
+  /*outline:1px solid #fff;*/
+  height: 100%;
+  overflow: hidden;
+  background: rgba(32, 178, 170, 0.5);
+  border-left: 15px solid rgba(32, 178, 170, 0.8);
+  width: 100%; }
+
+.skew-3 img {
+  position: absolute;
+  left: auto;
+  -webkit-transform: skew(30deg, 0deg);
+          transform: skew(30deg, 0deg);
+  min-height: 100%;
+  width: 100%; }
+
+.card {
+  -webkit-box-shadow: 10px 10px rgba(32, 178, 170, 0.25);
+          box-shadow: 10px 10px rgba(32, 178, 170, 0.25); }
+
+.card:nth-child(even) {
+  -webkit-box-shadow: 10px 10px rgba(128, 128, 128, 0.25);
+          box-shadow: 10px 10px rgba(128, 128, 128, 0.25); }
 
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button
