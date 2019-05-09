@@ -96,14 +96,16 @@
     </div>
 
 
-    <div class="container pt-5 pb-5">
+    <section class="container pt-5 pb-5 text-center">
+        <h3>What's new at AATE</h3>
         <div class="card-deck">
             {{> @card}}
             {{> @card}}
             {{> @card}}
         </div>
-    </div>
+    </section>
 
+    <!--
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -123,13 +125,11 @@
             </div>
         </div>
     </div>
+    -->
 
-    <div class="jumbotron aate-footer-cta" style="background-color:orange; font-size: 1.75rem;">
-        <div class="container">
-            <p class="lead">Learn about our upcoming event.</p>
-        </div>
-    </div>
+    {{> @featured-members}}
 
+    {{> @footer-cta}}
 
 </main>
 
