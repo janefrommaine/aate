@@ -13,7 +13,7 @@
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'understrap_footer_logo', array(
         'label' => __( 'Upload Footer Logo', 'understrap' ),
-        'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'understrap' ),
+        'description' => __( 'Upload a logo that will appear in the footer area', 'understrap' ),
         'section' => 'title_tagline', //this is the section where the footer-logo from WordPress is
         'settings' => 'understrap_footer_logo',
         'priority' => 8 // show it just below the custom-logo

@@ -14,6 +14,8 @@ $aate-orange: #f0632a;
       rgba(255, 0, 255, 1) 0%,
       rgba(255, 255, 255, 0) 100%
     );*/
+
+    overflow-x: hidden;
 }
 
 .aate-hero-three::before {
@@ -42,34 +44,41 @@ $aate-orange: #f0632a;
   letter-spacing: 2px;
 }
 
-/*
-  .skew {
-    transform: skew(20deg);
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .skew img {
-    transform: skew(-20deg);
-  }
-  */
-
 .skew-wrapper {
   height: 100%;
+  background: lightblue;
 }
 
 .skew-3 {
   position: relative;
   //margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 50px;
   transform: skew(-30deg, 0deg);
   /*outline:1px solid #fff;*/
   //width: 400px;
   height: 100%;
   overflow: hidden;
   background: rgba($aate-teal, 0.5); //rgba(0, 128, 128, 0.5);
-  border-left: 15px solid rgba($aate-teal, 0.8); //solid rgba(255, 255, 0, 0.5);
+  //border-left: 15px solid rgba($aate-teal, 0.8); //solid rgba(255, 255, 0, 0.5);
   width: 100%;
+}
+
+.skew-3 .unskew-3 {
+  //left: -70px;
+  //background-color: rgba(0,0,0,.15);
+  background-image: url("https://dummyimage.com/530x330/000/fff");
+  background-repeat: no-repeat;
+  background-size: cover; //contain;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  //width: 400px;
+  height: 200px;
+  transform: skew(30deg, 0deg);
+
+  //max-width: fit-content;
+  //width: 100%;
+  //width: 200%;
+  height: 100%;  
 }
 
 .skew-3 img {

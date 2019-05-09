@@ -1,5 +1,25 @@
-/* Typography */
+/* Typography 
 
 p.lead {
   font-family: $lead-font-family;
+}*/
+
+.lead {
+  line-height: 1.85em;
+}
+
+.entry-content > p:first-of-type {
+  @extend .lead;
+}
+
+.entry-content > p,
+.entry-content > ul {
+
+  @include media-breakpoint-up(lg) {
+    max-width: 80%;
+  }
+}
+
+.entry-content ul li {
+  margin-bottom: 0.5rem;
 }
