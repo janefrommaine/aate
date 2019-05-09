@@ -46,7 +46,7 @@ $aate-orange: #f0632a;
 
 .skew-wrapper {
   height: 100%;
-  background: lightblue;
+  //background: lightblue;
 }
 
 .skew-3 {
@@ -59,7 +59,7 @@ $aate-orange: #f0632a;
   height: 100%;
   overflow: hidden;
   background: rgba($aate-teal, 0.5); //rgba(0, 128, 128, 0.5);
-  //border-left: 15px solid rgba($aate-teal, 0.8); //solid rgba(255, 255, 0, 0.5);
+  border-left: 15px solid rgba($aate-teal, 0.8); //solid rgba(255, 255, 0, 0.5);
   width: 100%;
 }
 

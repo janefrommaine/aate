@@ -12344,8 +12344,7 @@ div.aate-skew > * {
   letter-spacing: 2px; }
 
 .skew-wrapper {
-  height: 100%;
-  background: lightblue; }
+  height: 100%; }
 
 .skew-3 {
   position: relative;
@@ -12356,6 +12355,7 @@ div.aate-skew > * {
   height: 100%;
   overflow: hidden;
   background: rgba(32, 178, 170, 0.5);
+  border-left: 15px solid rgba(32, 178, 170, 0.8);
   width: 100%; }
 
 .skew-3 .unskew-3 {
