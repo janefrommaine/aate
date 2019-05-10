@@ -12491,12 +12491,7 @@ div.aate-skew > * {
 }
 */
 .card {
-  -webkit-box-shadow: 10px 10px rgba(32, 178, 170, 0.25);
-          box-shadow: 10px 10px rgba(32, 178, 170, 0.25); }
-
-.card:nth-child(even) {
-  -webkit-box-shadow: 10px 10px rgba(128, 128, 128, 0.25);
-          box-shadow: 10px 10px rgba(128, 128, 128, 0.25); }
+  border-bottom: 8px solid rgba(12, 59, 136, 0.08); }
 
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button
