@@ -24,48 +24,37 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-<div class="site" id="page">
+	<a class="skip-link sr-only sr-only-focusable" href="#main-content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div class="aate-navbar" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
-
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
+	<header class="aate-header">
 		<nav class="navbar navbar-expand-md navbar-light">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
-
-						<?php if ( is_front_page() && is_home() ) : ?>
-
-							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-
-						<?php else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-
-						<?php endif; ?>
-
-
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
+			<!-- Your site title as branding in the menu -->
+			<?php if ( ! has_custom_logo() ) { ?>
+				<?php if ( is_front_page() && is_home() ) : ?>
+					<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php else : ?>
+					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+			<?php endif; ?>
+			<?php } else {
+				the_custom_logo();
+			} ?><!-- end custom logo -->
 					
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
 
-				<div class="aate-nav-container">
-					<!-- The Secondary/Top Menu goes here -->
-					<?php wp_nav_menu(
+			<div class="aate-nav-container">
+				<!-- The Secondary/Top Menu goes here -->
+				<?php wp_nav_menu(
 						array(
-							'theme_location'  => 'secondary-menu',
+							'theme_location'  => 'top-menu',
 							'container_class' => 'aate-top-menu',
 							'container_id'    => '',
 							'menu_class'      => 'navbar-nav ml-auto',
@@ -74,10 +63,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'depth'           => 2,
 							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 						)
-					); ?>
+				); ?>
 
-					<!-- The Primary Menu goes here -->
-					<?php wp_nav_menu(
+				<!-- The Primary Menu goes here -->
+				<?php wp_nav_menu(
 						array(
 							'theme_location'  => 'primary',
 							'container_class' => 'aate-main-menu collapse navbar-collapse',
@@ -88,12 +77,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 							'depth'           => 2,
 							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 						)
-					); ?>
-				</div>
-			<?php if ( 'container' == $container ) : ?>
+				); ?>
+			</div><!-- .aate-nav-container -->
+		<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
-			<?php endif; ?>
+		<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
-
-	</div><!-- #wrapper-navbar end -->
+	</header><!-- #wrapper-navbar end -->

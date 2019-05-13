@@ -32,15 +32,8 @@ function add_child_theme_textdomain() {
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
-function register_menus() {
-    register_nav_menus(
-      array(
-        'secondary-menu' => __( 'Secondary Menu' ),
-        'footer-menu' => __( 'Footer Menu' ),
-      )
-    );
-  }
-  add_action( 'init', 'register_menus' );
+// Register custom menus and menu walkers
+require_once(get_stylesheet_directory() . '/functions/menu.php');
 
-// Customizer functions
+  // Customizer functions
 require_once(get_stylesheet_directory() . '/functions/customizer.php');

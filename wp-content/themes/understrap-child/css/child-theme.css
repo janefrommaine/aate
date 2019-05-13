@@ -11977,7 +11977,7 @@ a[class*="btn-outline-"] {
 
 /* Main Menu */
 /*
-.aate-navbar {
+.aate-header {
   height: 70px;
 
   .navbar {
@@ -12000,7 +12000,7 @@ a[class*="btn-outline-"] {
 		width: $navbar-gutter-width;
 	}
 }*/
-.aate-navbar {
+.aate-header {
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0; }
 
@@ -12492,6 +12492,50 @@ div.aate-skew > * {
 */
 .card {
   border-bottom: 8px solid rgba(12, 59, 136, 0.08); }
+
+/* Memberpress Account Styles */
+.row .mp_wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.row > .mp_wrapper ~ .mp_wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+          flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+div#mepr-account-nav:not(.collapsing):not(.show) {
+  display: none; }
+  @media (min-width: 992px) {
+    div#mepr-account-nav:not(.collapsing):not(.show) {
+      display: block; } }
+
+.mepr-nav-item {
+  position: relative; }
+
+.mepr-active-nav-tab > a:before {
+  content: "";
+  width: 6px;
+  background-color: #81bc00;
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  bottom: -5px; }
+
+/*
+div#mepr-account-nav.show {
+    display: block;
+}
+*/
+.mepr-nav-item {
+  display: block; }
 
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button

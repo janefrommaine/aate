@@ -1,0 +1,44 @@
+/* Memberpress Account Styles */
+
+.row .mp_wrapper {
+    @include make-col-ready();
+    @include make-col(4);
+}
+.row > .mp_wrapper ~ .mp_wrapper {
+    @include make-col(8);
+}
+
+div#mepr-account-nav:not(.collapsing):not(.show) {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
+}
+
+.mepr-nav-item {
+    position: relative;
+}
+
+.mepr-active-nav-tab>a:before {
+    content: "";
+    width: 6px;
+    background-color: #81bc00;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: -5px;
+    bottom: -5px;
+}
+
+
+//.collapsing
+
+/*
+div#mepr-account-nav.show {
+    display: block;
+}
+*/
+
+.mepr-nav-item {
+    display: block;
+}

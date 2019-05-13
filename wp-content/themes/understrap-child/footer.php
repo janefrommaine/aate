@@ -61,8 +61,6 @@ $footer_text = get_theme_mod( 'understrap_footer_text' );
     </div><!-- container end -->
 </footer>
 
-</div><!-- #page we need this extra closing tag here -->
-
 <?php wp_footer(); ?>
 
 </body>
