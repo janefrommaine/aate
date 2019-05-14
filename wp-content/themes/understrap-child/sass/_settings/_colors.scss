@@ -2,6 +2,7 @@
 
 $aate-palette: (
   blue: #3d79a8,
+  teal: #3CA8A5,
   red: #cf102d,
   dark-red: #b20f26,
   //blue: #007cbb,
@@ -29,6 +30,18 @@ $aate-palette: (
 */
 
 @mixin add-aate-colors() {
+  @if map-has-key($aate-palette, blue) {
+    $aate-blue: map-get($aate-palette, blue) !global;
+    .aate-color-blue {
+      background-color: $aate-blue;
+    }
+  }
+  @if map-has-key($aate-palette, teal) {
+    $aate-teal: map-get($aate-palette, teal) !global;
+    .aate-color-teal {
+      background-color: $aate-teal;
+    }
+  }    
   @if map-has-key($aate-palette, red) {
     $aate-red: map-get($aate-palette, red) !global;
     .aate-color-red {
@@ -39,12 +52,6 @@ $aate-palette: (
     $aate-dark-red: map-get($aate-palette, dark-red) !global;
     .aate-color-dark-red {
       background-color: $aate-dark-red;
-    }
-  }
-  @if map-has-key($aate-palette, blue) {
-    $aate-blue: map-get($aate-palette, blue) !global;
-    .aate-color-blue {
-      background-color: $aate-blue;
     }
   }
   @if map-has-key($aate-palette, light-blue) {

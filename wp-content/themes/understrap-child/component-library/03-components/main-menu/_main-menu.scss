@@ -195,6 +195,14 @@
 .aate-main-menu {
   font-size: 1.5rem;
 
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
+
   .navbar-nav {
     width: 100%;
     @include media-breakpoint-up(sm) {

@@ -1,0 +1,18 @@
+/* Mixins */
+
+/* FontAwesome Psuedo Element mixin
+
+Base for creating a psuedo element from the FontAwesome icon library
+*/
+
+@mixin fa-icon($icon) {
+    content: $icon;
+    font-weight: 900;
+    font-family: "FontAwesome";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  

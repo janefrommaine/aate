@@ -16,8 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     </button>
 -->
 
-<button class="btn d-lg-none" type="button" data-toggle="collapse" data-target="#mepr-account-nav" style="background:red;">
-    See Sub Nav
+<button class="aate-account-nav-btn btn btn-link d-lg-none" type="button" data-toggle="collapse" data-target="#mepr-account-nav">
+In this Section
 </button>
 <div <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">
     <?php the_content(); ?>
