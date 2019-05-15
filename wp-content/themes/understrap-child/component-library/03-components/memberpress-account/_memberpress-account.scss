@@ -71,8 +71,11 @@ $accordion-icon-arrow-transition: transform 0.15s linear;
 }
 
 div#mepr-account-nav {
-    padding-left: 1rem;
     font-size: 18px;
+    padding-left: 1rem;
+    @include media-breakpoint-up(lg) {
+        padding-left: 0;
+    }
 }
 
 div#mepr-account-nav:not(.collapsing):not(.show) {

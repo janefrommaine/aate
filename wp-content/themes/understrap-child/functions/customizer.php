@@ -6,6 +6,14 @@
  * @package understrap
  */
 
+function understrap_sanitize_textarea( $input ) {
+    $allowed_html = array(
+        'br' => array(),
+    );
+
+    return wp_kses( $input, $allowed_html );
+}
+
  function understrap_theme_customize_register($wp_customize) {
 
     /* Footer logo */
@@ -23,7 +31,8 @@
     $wp_customize->add_setting('understrap_footer_text', array(
         'capability' => 'edit_theme_options',
         'default' => '',
-        'sanitize_callback' => 'sanitize_text_field',
+        //'sanitize_callback' => 'sanitize_textarea_field',
+        'sanitize_callback' => 'understrap_sanitize_textarea',
       ));
 
     $wp_customize->add_control(

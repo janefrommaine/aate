@@ -1,4 +1,5 @@
 /* Footer */
+$footer-anchor-color: $white;
 
 .aate-footer {
   //background: #303030;
@@ -22,11 +23,13 @@
   width: 100%;
 }
 
+/*
 .aate-footer nav {
   border-bottom: 1px solid #8a8a8a;
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
 }
+*/
 
 .aate-footer nav ul.menu li a {
   color: #fefefe;
@@ -55,5 +58,45 @@
   &:focus,
   &:hover {
     color: #000000;
+  }
+}
+
+.aate-footer_bottom > div {
+  border-top: 1px solid #8a8a8a;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.aate-footer_social-list {
+
+  ul {
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      
+      & + li {
+        margin-left: 12px;
+      }
+
+      a {
+        font-weight: 500;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover, &:active, &:focus {
+          opacity: 0.6;
+        }
+      }
+    } 
+  }
+
+  .fa, .fab {
+    color: $footer-anchor-color;
+    font-size: 32px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
   }
 }

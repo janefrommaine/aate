@@ -45,14 +45,17 @@ $footer_text = get_theme_mod( 'understrap_footer_text' );
 				</nav>
             </div>
         </div><!-- row end -->
-
-        <div class="row">
-            <div class="col text-right">
+		
+        <div class="row aate-footer_bottom">
+			<div class="col-md-6">
+				<?php aate_footer_social_links(); ?>
+			</div>
+            <div class="col-md-6 text-right">
                 <p class="address-box">
-                    Association for Athletic Training Education, Inc.<br />
+                    <!--Association for Athletic Training Education, Inc.<br />
                     7613 Elmwood Avenue<br />
                     PO Box 620762<br />
-					Middleton, WI 53562
+					Middleton, WI 53562-->
 					<?php echo $footer_text ?>
                 </p>
             </div>
