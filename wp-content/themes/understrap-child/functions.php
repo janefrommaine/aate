@@ -37,3 +37,6 @@ require_once(get_stylesheet_directory() . '/functions/menu.php');
 
   // Customizer functions
 require_once(get_stylesheet_directory() . '/functions/customizer.php');
+
+// Register Jobs Post Type
+require_once(get_stylesheet_directory() . '/functions/cpt-jobs.php');
