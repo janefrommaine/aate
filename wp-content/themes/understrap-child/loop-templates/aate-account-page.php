@@ -9,13 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-
-<!--
-    <button class="btn d-lg-none" type="button" data-toggle="collapse" data-target="#example-collapse">
-        <span class="navbar-light"><span class="navbar-toggler-icon"></span></span>
-    </button>
--->
-
 <button class="aate-account-nav-btn btn btn-link d-lg-none" type="button" data-toggle="collapse" data-target="#mepr-account-nav">
 In this Section
 </button>

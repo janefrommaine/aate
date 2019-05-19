@@ -105,7 +105,7 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background: rgba($aate-blue, 0.2);
+      background: rgba($aate-blue, 0.3);
       content: "";
       opacity: 0;
       transition: opacity 0.3s, transform 0.3s;
@@ -115,9 +115,15 @@
     &.active > .nav-link::after,
     .nav-link:hover::after,
     .nav-link:focus::after {
+      opacity: .7;
+      transform: translateY(0px);
+    }
+
+    &.active > .nav-link::after {
       opacity: 1;
       transform: translateY(0px);
     }
+
   }
 }
 
