@@ -95,25 +95,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_5b87ff0cdafe1",
-            "label": "Link Title Text",
-            "name": "link_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -133,5 +114,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "Fields for external\/internal link picker",
-    "modified": 1557255696
+    "modified": 1558296511
 }

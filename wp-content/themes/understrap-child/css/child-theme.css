@@ -8,62 +8,29 @@
 .aate-color-blue {
   background-color: #3d79a8; }
 
+.aate-color-dark-blue {
+  background-color: #284659; }
+
 .aate-color-teal {
   background-color: #3CA8A5; }
 
 .aate-color-dark-teal {
   background-color: #2B7875; }
 
-.aate-color-red {
-  background-color: #cf102d; }
-
-.aate-color-dark-red {
-  background-color: #b20f26; }
-
-.aate-color-light-blue {
-  background-color: #e1e7f0; }
-
-.aate-color-dark-blue {
-  background-color: #284659; }
-
-.aate-color-blue-12 {
-  background-color: rgba(12, 59, 136, 0.12); }
-
-.aate-color-blue-8 {
-  background-color: rgba(12, 59, 136, 0.08); }
-
-.aate-color-blue-4 {
-  background-color: rgba(12, 59, 136, 0.04); }
-
-.aate-color-light-green {
-  background-color: #82ba23; }
-
-.aate-color-green {
-  background-color: #248200; }
-
-.aate-color-dark-green {
-  background-color: #217a00; }
-
-.aate-color-yellow {
-  background-color: #ffbe3b; }
-
-.aate-color-dark-yellow {
-  background-color: #f5b83d; }
-
 .aate-color-black {
   background-color: #000000; }
 
 .aate-color-gray-darkest {
-  background-color: #333333; }
+  background-color: #212529; }
 
 .aate-color-gray-dark {
-  background-color: #555555; }
+  background-color: #495057; }
 
 .aate-color-gray-medium {
-  background-color: #747575; }
+  background-color: #6c757d; }
 
 .aate-color-gray {
-  background-color: #b1b3b6; }
+  background-color: #ced4da; }
 
 .aate-color-white {
   background-color: #ffffff; }
@@ -12054,62 +12021,29 @@ a.skip-link {
 .aate-color-blue {
   background-color: #3d79a8; }
 
+.aate-color-dark-blue {
+  background-color: #284659; }
+
 .aate-color-teal {
   background-color: #3CA8A5; }
 
 .aate-color-dark-teal {
   background-color: #2B7875; }
 
-.aate-color-red {
-  background-color: #cf102d; }
-
-.aate-color-dark-red {
-  background-color: #b20f26; }
-
-.aate-color-light-blue {
-  background-color: #e1e7f0; }
-
-.aate-color-dark-blue {
-  background-color: #284659; }
-
-.aate-color-blue-12 {
-  background-color: rgba(12, 59, 136, 0.12); }
-
-.aate-color-blue-8 {
-  background-color: rgba(12, 59, 136, 0.08); }
-
-.aate-color-blue-4 {
-  background-color: rgba(12, 59, 136, 0.04); }
-
-.aate-color-light-green {
-  background-color: #82ba23; }
-
-.aate-color-green {
-  background-color: #248200; }
-
-.aate-color-dark-green {
-  background-color: #217a00; }
-
-.aate-color-yellow {
-  background-color: #ffbe3b; }
-
-.aate-color-dark-yellow {
-  background-color: #f5b83d; }
-
 .aate-color-black {
   background-color: #000000; }
 
 .aate-color-gray-darkest {
-  background-color: #333333; }
+  background-color: #212529; }
 
 .aate-color-gray-dark {
-  background-color: #555555; }
+  background-color: #495057; }
 
 .aate-color-gray-medium {
-  background-color: #747575; }
+  background-color: #6c757d; }
 
 .aate-color-gray {
-  background-color: #b1b3b6; }
+  background-color: #ced4da; }
 
 .aate-color-white {
   background-color: #ffffff; }
@@ -12303,13 +12237,6 @@ li.aate-mobile-menu-item {
 .aate-footer-menu {
   width: 100%; }
 
-/*
-.aate-footer nav {
-  border-bottom: 1px solid #8a8a8a;
-  padding-bottom: 1.5rem;
-  margin-bottom: 2rem;
-}
-*/
 .aate-footer nav ul.menu li a {
   color: #fefefe; }
 
@@ -12327,7 +12254,7 @@ li.aate-mobile-menu-item {
   border-width: 3px;
   color: #fff; }
   .aate-footer .navbar-dark .navbar-nav .aate-menu-button .nav-link:active, .aate-footer .navbar-dark .navbar-nav .aate-menu-button .nav-link:focus, .aate-footer .navbar-dark .navbar-nav .aate-menu-button .nav-link:hover {
-    color: #000000; }
+    color: #000; }
 
 .aate-footer_bottom > div {
   border-top: 1px solid #8a8a8a;
@@ -12348,7 +12275,7 @@ li.aate-mobile-menu-item {
         opacity: 0.6; }
 
 .aate-footer_social-list .fa, .aate-footer_social-list .fab {
-  color: #fff;
+  color: #fefefe;
   font-size: 32px; }
 
 @media (min-width: 992px) {
@@ -12436,8 +12363,24 @@ li.aate-mobile-menu-item {
 .aate-hero_image + div {
   min-height: 150px; }
 
+.aate-card-list {
+  text-align: center; }
+  .aate-card-list h3 {
+    margin-bottom: 1.5rem; }
+
 .card {
   border-bottom: 8px solid rgba(12, 59, 136, 0.08); }
+
+/* Featured Members */
+.aate-featured-members {
+  background-color: #3d79a8;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem; }
+
+.aate-featured-members_logos img {
+  margin: 0.5rem;
+  max-width: 130px; }
 
 /* Memberpress Account Styles */
 .row .mp_wrapper {

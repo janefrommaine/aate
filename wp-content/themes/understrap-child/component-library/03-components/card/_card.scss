@@ -1,8 +1,11 @@
-.card {
-  //box-shadow: 10px 10px rgba($aate-teal, 0.25); //rgba(255, 255, 0, 0.25);
-  border-bottom: 8px solid rgba(12,59,136,.08);
+.aate-card-list {
+  text-align: center;
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
 }
 
-.card:nth-child(even) {
-  //box-shadow: 10px 10px rgba(gray, 0.25);
+.card {
+  border-bottom: 8px solid rgba(12,59,136,.08);
 }

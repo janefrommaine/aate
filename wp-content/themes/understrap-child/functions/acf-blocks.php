@@ -12,7 +12,7 @@ function understrap_register_blocks() {
     // Feature Box List / Card List
 	acf_register_block_type( array(
 		'name'			=> 'card-list',
-		'title'			=> __( 'Feature Box List', 'clientname' ),
+		'title'			=> __( 'Feature Box List', 'aate' ),
 		'render_template'	=> 'partials/block-card-list.php',
 		'category'		=> 'formatting',
 		'icon'			=> 'id-alt',

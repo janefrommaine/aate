@@ -32,7 +32,7 @@ echo '</div>';
 $title = get_field( 'card_list_title' );
 ?>
 <!-- Feature box list -->
-<section class="container pt-5 pb-5 text-center">
+<section class="aate-card-list container wrapper">
     <h3><?php echo $title ?></h3>
     <!-- Loop through feature boxes -->
     <?php if( have_rows('card_list') ): ?>

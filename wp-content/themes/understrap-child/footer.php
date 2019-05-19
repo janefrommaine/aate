@@ -16,6 +16,7 @@ $footer_logo = get_theme_mod( 'understrap_footer_logo' );
 $footer_text = get_theme_mod( 'understrap_footer_text' );
 ?>
 
+<?php get_template_part( 'partials/aate', 'featured-members' ); ?>
 <?php get_template_part( 'partials/aate', 'footer-cta' ); ?>
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 

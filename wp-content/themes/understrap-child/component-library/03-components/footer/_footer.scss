@@ -1,11 +1,10 @@
 /* Footer */
-$footer-anchor-color: $white;
+$footer-anchor-color: #fefefe;
 
 .aate-footer {
-  //background: #303030;
-  background: linear-gradient(-30deg, #383838, #383838 45%, #303030 45%) #fff;
+  background: linear-gradient(-30deg, #383838, #383838 45%, #303030 45%) $white;
 
-  color: #fefefe;
+  color: $footer-anchor-color;
   padding: 50px 0;
   clear: both;
   text-align: center;
@@ -23,16 +22,8 @@ $footer-anchor-color: $white;
   width: 100%;
 }
 
-/*
-.aate-footer nav {
-  border-bottom: 1px solid #8a8a8a;
-  padding-bottom: 1.5rem;
-  margin-bottom: 2rem;
-}
-*/
-
 .aate-footer nav ul.menu li a {
-  color: #fefefe;
+  color: $footer-anchor-color;
 }
 
 .aate-footer .navbar-nav {
@@ -57,7 +48,7 @@ $footer-anchor-color: $white;
   &:active,
   &:focus,
   &:hover {
-    color: #000000;
+    color: $black;
   }
 }
 
