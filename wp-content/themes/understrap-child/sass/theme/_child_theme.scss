@@ -23,6 +23,7 @@
 
 // 5. Objects
 //    Non-cosmetic design patterns including grid and layout classes
+@import "../_objects/layout";
 
 // 6. Components
 @import "../../component-library/03-components/main-menu/main-menu";
@@ -33,6 +34,7 @@
 @import "../../component-library/03-components/card/card";
 @import "../../component-library/03-components/featured-members/featured-members";
 @import "../../component-library/03-components/memberpress-account/memberpress-account";
+@import "../../component-library/03-components/subnav/subnav";
 
 // 7. Overrides
 //    Contains anything that overrides all other layers, ie8 fixes, utility and helper classes.

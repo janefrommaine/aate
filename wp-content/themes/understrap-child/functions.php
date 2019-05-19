@@ -40,3 +40,6 @@ require_once(get_stylesheet_directory() . '/functions/customizer.php');
 
 // Customize theme settings / gutenberg editor defaults
 require_once(get_stylesheet_directory() . '/functions/theme-settings.php');
+
+// Register gutenberg blocks with ACF
+require_once(get_stylesheet_directory() . '/functions/acf-blocks.php');
