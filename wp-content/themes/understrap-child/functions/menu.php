@@ -7,15 +7,15 @@
  */
 
 function register_menus() {
-    register_nav_menus(
-      array(
-        'top-menu' => __( 'Top Menu', 'understrap' ),
-        'footer-menu' => __( 'Footer Menu', 'understrap' ),
-        'social-menu' => __( 'Social Menu', 'understrap' ),
-      )
-    );
-  }
-  add_action( 'init', 'register_menus' );
+  register_nav_menus(
+    array(
+      'top-menu' => __( 'Top Menu', 'understrap' ),
+      'footer-menu' => __( 'Footer Menu', 'understrap' ),
+      'social-menu' => __( 'Social Menu', 'understrap' ),
+    )
+  );
+}
+add_action( 'init', 'register_menus' );
 
   // The Footer Menu - Social Media
 function aate_footer_social_links() {

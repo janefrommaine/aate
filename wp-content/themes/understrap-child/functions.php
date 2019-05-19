@@ -35,8 +35,8 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 // Register custom menus and menu walkers
 require_once(get_stylesheet_directory() . '/functions/menu.php');
 
-  // Customizer functions
+// Customizer functions
 require_once(get_stylesheet_directory() . '/functions/customizer.php');
 
-// Register Jobs Post Type
-require_once(get_stylesheet_directory() . '/functions/cpt-jobs.php');
+// Customize theme settings / gutenberg editor defaults
+require_once(get_stylesheet_directory() . '/functions/theme-settings.php');

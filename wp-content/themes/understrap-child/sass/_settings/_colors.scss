@@ -3,6 +3,7 @@
 $aate-palette: (
   blue: #3d79a8,
   teal: #3CA8A5,
+  dark-teal:#2B7875,
   red: #cf102d,
   dark-red: #b20f26,
   //blue: #007cbb,
@@ -41,7 +42,13 @@ $aate-palette: (
     .aate-color-teal {
       background-color: $aate-teal;
     }
-  }    
+  }
+  @if map-has-key($aate-palette, dark-teal) {
+    $aate-dark-teal: map-get($aate-palette, dark-teal) !global;
+    .aate-color-dark-teal {
+      background-color: $aate-dark-teal;
+    }
+  } 
   @if map-has-key($aate-palette, red) {
     $aate-red: map-get($aate-palette, red) !global;
     .aate-color-red {

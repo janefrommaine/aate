@@ -1,0 +1,14 @@
+/* Override WP Gutenberg Block styles
+ * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/style.scss
+*/
+
+// Font sizes.
+
+.has-small-font-size {
+	@extend .small;
+}
+
+.has-large-font-size {
+	font-size: 24px;
+}
+

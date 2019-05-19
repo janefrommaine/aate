@@ -11,6 +11,9 @@
 .aate-color-teal {
   background-color: #3CA8A5; }
 
+.aate-color-dark-teal {
+  background-color: #2B7875; }
+
 .aate-color-red {
   background-color: #cf102d; }
 
@@ -72,7 +75,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #3d79a8;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -382,18 +385,18 @@ h2, .h2 {
   font-size: 2rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
-
-h4, .h4 {
   font-size: 1.5rem; }
 
-h5, .h5 {
+h4, .h4 {
   font-size: 1.25rem; }
+
+h5, .h5 {
+  font-size: 1.15rem; }
 
 h6, .h6 {
   font-size: 1rem; }
 
-.lead, .entry-content > p:first-of-type, #mepr-account-welcome-message p {
+.lead, .entry-content > p:first-of-type:not(.has-small-font-size):not(.small):not(.has-small-font-size):not(.has-large-font-size), #mepr-account-welcome-message p {
   font-size: 1.25rem;
   font-weight: 300; }
 
@@ -423,8 +426,7 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
-small,
-.small {
+small, .small, .has-small-font-size {
   font-size: 80%;
   font-weight: 400; }
 
@@ -12055,6 +12057,9 @@ a.skip-link {
 .aate-color-teal {
   background-color: #3CA8A5; }
 
+.aate-color-dark-teal {
+  background-color: #2B7875; }
+
 .aate-color-red {
   background-color: #cf102d; }
 
@@ -12109,13 +12114,12 @@ a.skip-link {
 .aate-color-white {
   background-color: #ffffff; }
 
-/* Typography 
-
-p.lead {
-  font-family: $lead-font-family;
-}*/
-.lead, .entry-content > p:first-of-type, #mepr-account-welcome-message p {
+/* Typography */
+.lead, .entry-content > p:first-of-type:not(.has-small-font-size):not(.small):not(.has-small-font-size):not(.has-large-font-size), #mepr-account-welcome-message p {
   line-height: 1.85em; }
+
+h2, .h2 {
+  color: #2B7875; }
 
 @media (min-width: 992px) {
   .entry-content > p,
@@ -12425,6 +12429,9 @@ li.aate-mobile-menu-item {
           transform: translate(60px, -50%) rotate(12deg);
   z-index: 1; }
 
+.aate-hero_image + div {
+  min-height: 150px; }
+
 .card {
   border-bottom: 8px solid rgba(12, 59, 136, 0.08); }
 
@@ -12609,5 +12616,11 @@ $color__background-button-hover: pink;
         outline: thin dotted;
         outline-offset: -4px;
       }*/ }
+
+/* Override WP Gutenberg Block styles
+ * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/style.scss
+*/
+.has-large-font-size {
+  font-size: 24px; }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -1,14 +1,14 @@
-/* Typography 
-
-p.lead {
-  font-family: $lead-font-family;
-}*/
+/* Typography */
 
 .lead {
   line-height: 1.85em;
 }
 
-.entry-content > p:first-of-type {
+h2, .h2 {
+  color: $aate-dark-teal;
+}
+
+.entry-content > p:first-of-type:not(.has-small-font-size):not(.small):not(.has-large-font-size) {
   @extend .lead;
 }
 

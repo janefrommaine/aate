@@ -16,54 +16,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-
-<?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
-<?php endif; ?>
-
+<?php get_template_part( 'partials/aate', 'hero' ); ?>
 <main class="site-main <?php echo esc_attr( $container ); ?>" id="main-content" role="main">
     <div class="row">
 
-			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
-			
-
-				<?php if ( have_posts() ) : ?>
-
-					<?php /* Start the Loop */ ?>
-
+			<div class="col-md-12 content-area" id="primary">
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php
+						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
+						<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 						?>
 
-					<?php endwhile; ?>
+					<?php endwhile; // end of the loop. ?>
+			</div><!-- #primary -->
 
-				<?php else : ?>
-
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
-
-				<?php endif; ?>
-
-
-			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-    </div><!-- .row -->
-</main><!-- #main -->
+	</div><!-- .row end -->
+</main><!-- #full-width-page-wrapper -->
 
 <?php get_footer(); ?>
+
