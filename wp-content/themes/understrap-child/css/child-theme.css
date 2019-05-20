@@ -1369,20 +1369,21 @@ pre {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-.table, .mepr-account-table {
+.table, .mepr-account-table, table.job-manager-jobs {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529; }
-  .table th, .mepr-account-table th,
+  .table th, .mepr-account-table th, table.job-manager-jobs th,
   .table td,
-  .mepr-account-table td {
+  .mepr-account-table td,
+  table.job-manager-jobs td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
-  .table thead th, .mepr-account-table thead th {
+  .table thead th, .mepr-account-table thead th, table.job-manager-jobs thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6; }
-  .table tbody + tbody, .mepr-account-table tbody + tbody {
+  .table tbody + tbody, .mepr-account-table tbody + tbody, table.job-manager-jobs tbody + tbody {
     border-top: 2px solid #dee2e6; }
 
 .table-sm th,
@@ -1558,12 +1559,12 @@ pre {
   .table-hover .table-active:hover > th {
     background-color: rgba(0, 0, 0, 0.075); }
 
-.table .thead-dark th, .mepr-account-table .thead-dark th {
+.table .thead-dark th, .mepr-account-table .thead-dark th, table.job-manager-jobs .thead-dark th {
   color: #fff;
   background-color: #343a40;
   border-color: #454d55; }
 
-.table .thead-light th, .mepr-account-table .thead-light th, .table .mepr-account-table thead th, .mepr-account-table .table thead th, .mepr-account-table thead th {
+.table .thead-light th, .mepr-account-table .thead-light th, table.job-manager-jobs .thead-light th, .table .mepr-account-table thead th, .mepr-account-table .table thead th, .mepr-account-table thead th, .table table.job-manager-jobs thead th, table.job-manager-jobs .table thead th, .mepr-account-table table.job-manager-jobs thead th, table.job-manager-jobs .mepr-account-table thead th, table.job-manager-jobs thead th {
   color: #495057;
   background-color: #e9ecef;
   border-color: #dee2e6; }
@@ -1593,12 +1594,12 @@ pre {
       border: 0; } }
 
 @media (max-width: 767.98px) {
-  .table-responsive-md {
+  .table-responsive-md, table.job-manager-jobs {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; }
-    .table-responsive-md > .table-bordered {
+    .table-responsive-md > .table-bordered, table.job-manager-jobs > .table-bordered {
       border: 0; } }
 
 @media (max-width: 991.98px) {
@@ -9539,11 +9540,12 @@ a.text-dark:hover, a.text-dark:focus {
     display: none; }
   .badge {
     border: 1px solid #000; }
-  .table, .mepr-account-table {
+  .table, .mepr-account-table, table.job-manager-jobs {
     border-collapse: collapse !important; }
     
     .table td,
-    .mepr-account-table td, .table th, .mepr-account-table th {
+    .mepr-account-table td,
+    table.job-manager-jobs td, .table th, .mepr-account-table th, table.job-manager-jobs th {
       background-color: #fff !important; }
   .table-bordered th,
   .table-bordered td {
@@ -9555,7 +9557,7 @@ a.text-dark:hover, a.text-dark:focus {
     .table-dark thead th,
     .table-dark tbody + tbody {
       border-color: #dee2e6; }
-  .table .thead-dark th, .mepr-account-table .thead-dark th {
+  .table .thead-dark th, .mepr-account-table .thead-dark th, table.job-manager-jobs .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
 
@@ -12386,7 +12388,7 @@ li.aate-mobile-menu-item {
   margin: 0.5rem;
   max-width: 130px; }
 
-/* Memberpress Account Styles */
+/* Memberpress Plugin Account Styles */
 .row .mp_wrapper:not(.mp_login_form) {
   position: relative;
   width: 100%;
@@ -12529,6 +12531,7 @@ div#mepr-account-nav:not(.collapsing):not(.show) {
   .aate-subnav a {
     color: #fff; }
 
+/*  WP Job Manager plugin classes to override  */
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button
 */

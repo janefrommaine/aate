@@ -1,0 +1,9 @@
+/*  WP Job Manager plugin classes to override  */
+table.job-manager-jobs {
+  @extend .table;
+  @extend .table-responsive-md;
+}
+
+table.job-manager-jobs thead{
+  @extend .thead-light;
+}
