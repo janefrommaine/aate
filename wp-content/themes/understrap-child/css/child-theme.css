@@ -510,7 +510,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, body:not(.page-template-aate-account) .mp_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12307,7 +12307,7 @@ li.aate-mobile-menu-item {
   border-bottom: 1px solid #dee2e6;
   margin: 0 auto 60px; }
 
-.aate-hero .row {
+.aate-hero .row, .aate-hero body:not(.page-template-aate-account) .mp_wrapper, body:not(.page-template-aate-account) .aate-hero .mp_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12388,8 +12388,32 @@ li.aate-mobile-menu-item {
   margin: 0.5rem;
   max-width: 130px; }
 
+/* Memberpress Plugin Form Styles */
+.mepr-signup-form,
+.mp_login_form,
+.mepr_error {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
+  @media (min-width: 992px) {
+    .mepr-signup-form,
+    .mp_login_form,
+    .mepr_error {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+
+.mp_login_form form {
+  width: 100%; }
+
 /* Memberpress Plugin Account Styles */
-.row .mp_wrapper:not(.mp_login_form) {
+.page-template-aate-account .row .mp_wrapper, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper .mp_wrapper, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper .mp_wrapper {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -12400,44 +12424,28 @@ li.aate-mobile-menu-item {
   max-width: 100%;
   margin-bottom: 2rem; }
   @media (min-width: 992px) {
-    .row .mp_wrapper:not(.mp_login_form) {
+    .page-template-aate-account .row .mp_wrapper, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper .mp_wrapper, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper .mp_wrapper {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 25%;
               flex: 0 0 25%;
       max-width: 25%; } }
 
-.row > .mp_wrapper ~ .mp_wrapper {
+.page-template-aate-account .row > .mp_wrapper ~ .mp_wrapper, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper > .mp_wrapper ~ .mp_wrapper, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper > .mp_wrapper ~ .mp_wrapper {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%; }
   @media (min-width: 992px) {
-    .row > .mp_wrapper ~ .mp_wrapper {
+    .page-template-aate-account .row > .mp_wrapper ~ .mp_wrapper, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper > .mp_wrapper ~ .mp_wrapper, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper > .mp_wrapper ~ .mp_wrapper {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 75%;
               flex: 0 0 75%;
       max-width: 75%; } }
 
-.mp_login_form {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%; }
-  @media (min-width: 992px) {
-    .mp_login_form {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 50%;
-              flex: 0 0 50%;
-      max-width: 50%; } }
-
-.row .mp_wrapper:first-child:not(.mp_login_form) {
+.page-template-aate-account .row .mp_wrapper:first-child, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper .mp_wrapper:first-child, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper .mp_wrapper:first-child {
   border-bottom: 5px solid rgba(12, 59, 136, 0.08); }
   @media (min-width: 992px) {
-    .row .mp_wrapper:first-child:not(.mp_login_form) {
+    .page-template-aate-account .row .mp_wrapper:first-child, .page-template-aate-account body:not(.page-template-aate-account) .mp_wrapper .mp_wrapper:first-child, body:not(.page-template-aate-account) .page-template-aate-account .mp_wrapper .mp_wrapper:first-child {
       border-bottom: 0; } }
 
 .aate-account-nav-btn {
@@ -12535,73 +12543,26 @@ div#mepr-account-nav:not(.collapsing):not(.show) {
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button
 */
-/*
-$font__size-sm: 1rem;
-$font__line-height-heading: 1rem;
-$size__spacing-unit: 1rem;
-$color__background-button: red;
-$color__background-button-hover: pink;
-*/
-.wp-block-button {
-  /*
-    &:not(.is-style-squared) .wp-block-button__link {
-      border-radius: 5px;
-    }*/
-  /*
-    &.is-style-outline .wp-block-button__link,
-    &.is-style-outline .wp-block-button__link:focus,
-    &.is-style-outline .wp-block-button__link:active {
-      //@include button-all-transition;
-      border-width: 2px;
-      border-style: solid;
+/*---------------------
+  IE 11 grid fix
+-----------------------*/
+.wp-block-media-text {
+  display: -ms-grid;
+  -ms-grid-columns: 50% auto; }
 
-      &:not(.has-background) {
-        background: transparent;
-      }
+/* default media on the left */
+.wp-block-media-text .wp-block-media-text__media {
+  -ms-grid-column: 1; }
 
-      &:not(.has-text-color) {
-        color: $color__background-button;
-        border-color: currentColor;
-      }
-    }
+.wp-block-media-text .wp-block-media-text__content {
+  -ms-grid-column: 2; }
 
-    &.is-style-outline .wp-block-button__link:hover {
-      color: white;
-      border-color: $color__background-button-hover;
-      &:not(.has-background) {
-        color: $color__background-button-hover;
-      }
-    }*/ }
-  .wp-block-button .wp-block-button__link {
-    /*  
-      //@include button-transition;
-      border: none;
-      font-size: $font__size-sm;
-      //@include font-family($font__heading);
-      line-height: $font__line-height-heading;
-      box-sizing: border-box;
-      font-weight: bold;
-      text-decoration: none;
-      padding: ($size__spacing-unit * 0.76) $size__spacing-unit;
-      outline: none;
-      */
-    /*
-      &:not(.has-text-color) {
-        color: white;
-      }
+/* media on the right */
+.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media {
+  -ms-grid-column: 2; }
 
-      &:hover {
-        color: white;
-        background: $color__background-button-hover;
-        cursor: pointer;
-      }
-
-      &:focus {
-        color: white;
-        background: $color__background-button-hover;
-        outline: thin dotted;
-        outline-offset: -4px;
-      }*/ }
+.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+  -ms-grid-column: 1; }
 
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/style.scss

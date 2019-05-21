@@ -1,23 +1,14 @@
-/* Memberpress Plugin Account Styles */
+/* Memberpress Plugin Form Styles */
 
-.row .mp_wrapper:not(.mp_login_form) {
-    @include make-col-ready();
-    @include make-col(12);
-    margin-bottom: 2rem;   
-
-    @include media-breakpoint-up(lg) {
-        @include make-col(3);
-    }
-}
-.row > .mp_wrapper ~ .mp_wrapper {
-    @include make-col(12);
-
-    @include media-breakpoint-up(lg) {
-        @include make-col(9);
+body:not(.page-template-aate-account) {
+    .mp_wrapper {
+        @extend .row;
     }
 }
 
-.mp_login_form {
+.mepr-signup-form, 
+.mp_login_form,
+.mepr_error {
     @include make-col-ready();
     @include make-col(12);
     @include media-breakpoint-up(lg) {
@@ -25,12 +16,38 @@
     }    
 }
 
-// Navigation
-.row .mp_wrapper:first-child:not(.mp_login_form) {
-    border-bottom: 5px solid rgba(12,59,136,.08);
+.mp_login_form form {
+    width: 100%;
+}
 
-    @include media-breakpoint-up(lg) {
-        border-bottom: 0;
+/* Memberpress Plugin Account Styles */
+
+.page-template-aate-account { 
+    
+    .row .mp_wrapper {
+        @include make-col-ready();
+        @include make-col(12);
+        margin-bottom: 2rem;   
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+    }
+    .row > .mp_wrapper ~ .mp_wrapper {
+        @include make-col(12);
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(9);
+        }
+    }
+
+    // Navigation
+    .row .mp_wrapper:first-child {
+        border-bottom: 5px solid rgba(12,59,136,.08);
+
+        @include media-breakpoint-up(lg) {
+            border-bottom: 0;
+        }
     }
 }
 

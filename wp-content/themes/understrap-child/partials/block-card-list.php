@@ -50,7 +50,7 @@ $title = get_field( 'card_list_title' );
                 $button_text = get_sub_field('card_button_link_text');
                 $button_link_title = get_sub_field('card_button_link_title');
             ?>
-            <div class="card">
+            <div class="card d-block">
                 <?php echo wp_get_attachment_image( $image, 'full' ); ?>
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $card_title ?></h5>
