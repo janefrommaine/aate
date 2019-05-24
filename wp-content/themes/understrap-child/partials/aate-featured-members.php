@@ -21,7 +21,7 @@ $button_link_title = get_field('featured_members_button_link_title');
             <?php endif; ?>
 
             <?php if($fm_body): ?>
-                <p><?php echo $fm_body ?></p>
+                <?php echo $fm_body ?>
             <?php endif; ?>
 
             <?php if( have_rows('featured_member_logo_list') ): ?>

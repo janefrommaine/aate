@@ -388,8 +388,8 @@ h6, .h6 {
   line-height: 1.2; }
 
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
@@ -12388,6 +12388,24 @@ li.aate-mobile-menu-item {
   margin: 0.5rem;
   max-width: 130px; }
 
+.aate-featured-members ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0; }
+
+.aate-featured-members ul li {
+  width: 100%;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem; }
+  @media (min-width: 768px) {
+    .aate-featured-members ul li {
+      width: 50%; } }
+
 /* Memberpress Plugin Form Styles */
 .mepr-signup-form,
 .mp_login_form,
@@ -12543,6 +12561,20 @@ div#mepr-account-nav:not(.collapsing):not(.show) {
 /* Override WP Gutenberg Block styles
  * https://github.com/WordPress/gutenberg/tree/master/packages/block-library/src/button
 */
+.wp-block-media-text {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+    padding: 0; }
+  .wp-block-media-text .wp-block-media-text__content {
+    margin-top: 5px; }
+  @media (min-width: 576px) {
+    .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+      padding: 0 8% 0 0; }
+    .wp-block-media-text:not(.has-media-on-the-right) .wp-block-media-text__content {
+      padding: 0 0 0 8%; } }
+
 /*---------------------
   IE 11 grid fix
 -----------------------*/

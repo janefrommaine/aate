@@ -25,7 +25,7 @@
             "key": "field_5ce1ae85a1a4e",
             "label": "Featured Members Body",
             "name": "featured_members_body",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "Text that appears after the featured members title.",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_5ce1b272a9cc9",
@@ -151,5 +151,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1558297131
+    "modified": 1558663596
 }

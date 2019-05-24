@@ -11,6 +11,14 @@
 $blue: $aate-blue;
 $primary: $aate-blue;
 
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
@@ -35,6 +43,8 @@ $line-height-base:            1.65 !default;
 
 $lead-font-family: $headings-font-family;
 $lead-font-weight: 300 !default;
+
+$hr-margin-y:                 $spacer * 2;
 
 // Navbar
 $navbar-nav-link-padding-x: 1rem !default;
