@@ -114,3 +114,16 @@ function understrap_remove_page_template( $page_templates ) {
 	return $page_templates;
 }
 add_filter( 'theme_page_templates', 'understrap_remove_page_template' );
+
+function understrap_change_logo_class( $html ) {
+
+	$site_name = get_bloginfo( 'name', 'display' );
+	$replacement_html = $site_name . '</a>';
+	$html = str_replace( '</a>', $replacement_html, $html );
+	$html = str_replace( 'class="custom-logo"', 'class="img-fluid"', $html );
+	$html = str_replace( 'class="custom-logo-link"', 'class="navbar-brand custom-logo-link"', $html );
+	$html = str_replace( 'alt=""', 'title="Home" alt="logo"', $html );	
+
+    return $html;
+}
+add_filter( 'get_custom_logo', 'understrap_change_logo_class' );

@@ -7,16 +7,39 @@
   align-items: flex-end;
 }
 
-.navbar-brand {
-  a {
-    display: inline-block;
+a.navbar-brand {
+  margin: 0 auto;
+  padding-bottom: 0;
+
+  display: inline-block;
+  font-size: 0.85rem;
+  &:hover,  &:active, &:focus {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-only(md) {
+    font-size: 0.65rem;
+    margin-right: 1rem;
+  }    
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 3rem;
+    font-size: 1rem;
   }
 
   img {
+    margin: 0 auto;
+    display: block;
     height: auto;
     max-width: 100px;
     width: 100%;
     @include media-breakpoint-up(sm) {
+      max-width: 180px;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 160px;
+    }    
+    @include media-breakpoint-up(lg) {
       max-width: 180px;
     }
   }
@@ -30,6 +53,9 @@
 .navbar-toggler {
   background: none;
   border: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.25rem;
 
   &:active,
   &:focus {
@@ -140,6 +166,13 @@
   @include media-breakpoint-up(md) {
     display: block;
   }
+
+  @include media-breakpoint-only(md) {
+    .navbar-nav .nav-link {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+  }
 }
 
 .aate-main-menu {
@@ -166,6 +199,10 @@
     @extend .btn;
     @extend .btn-primary;
     color: $white !important;
+
+    @include media-breakpoint-only(md) {
+      line-height: 1.25rem;
+    }    
   }
 
   @include media-breakpoint-up(md) {

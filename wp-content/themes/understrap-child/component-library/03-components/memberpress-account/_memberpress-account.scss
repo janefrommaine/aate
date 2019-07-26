@@ -6,6 +6,12 @@ body:not(.page-template-aate-account) {
     }
 }
 
+.mepr-unauthorized-message,
+.mepr-login-form-wrap {
+    @include make-col-ready();
+    @include make-col(12);
+}
+
 .mepr-signup-form, 
 .mp_login_form,
 .mepr_error {

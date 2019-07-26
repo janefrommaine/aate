@@ -12089,23 +12089,46 @@ a[class*="btn-outline-"] {
       -ms-flex-align: end;
           align-items: flex-end; }
 
-.navbar-brand a {
-  display: inline-block; }
-
-.navbar-brand img {
-  height: auto;
-  max-width: 100px;
-  width: 100%; }
-  @media (min-width: 576px) {
-    .navbar-brand img {
-      max-width: 180px; } }
+a.navbar-brand {
+  margin: 0 auto;
+  padding-bottom: 0;
+  display: inline-block;
+  font-size: 0.85rem; }
+  a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
+    text-decoration: none; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    a.navbar-brand {
+      font-size: 0.65rem;
+      margin-right: 1rem; } }
+  @media (min-width: 992px) {
+    a.navbar-brand {
+      margin-right: 3rem;
+      font-size: 1rem; } }
+  a.navbar-brand img {
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 100px;
+    width: 100%; }
+    @media (min-width: 576px) {
+      a.navbar-brand img {
+        max-width: 180px; } }
+    @media (min-width: 768px) {
+      a.navbar-brand img {
+        max-width: 160px; } }
+    @media (min-width: 992px) {
+      a.navbar-brand img {
+        max-width: 180px; } }
 
 .navbar-light .navbar-toggler .icon-bar {
   background: #000; }
 
 .navbar-toggler {
   background: none;
-  border: none; }
+  border: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.25rem; }
   .navbar-toggler:active, .navbar-toggler:focus {
     outline: 0; }
   .navbar-toggler .icon-bar {
@@ -12194,6 +12217,10 @@ a[class*="btn-outline-"] {
   @media (min-width: 768px) {
     .aate-top-menu {
       display: block; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .aate-top-menu .navbar-nav .nav-link {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem; } }
 
 .aate-main-menu {
   font-size: 1.5rem; }
@@ -12213,6 +12240,9 @@ a[class*="btn-outline-"] {
 
 .aate-main-menu li.aate-menu-button a {
   color: #fff !important; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .aate-main-menu li.aate-menu-button a {
+      line-height: 1.25rem; } }
 
 @media (min-width: 768px) {
   .aate-main-menu li.aate-menu-button {
@@ -12407,6 +12437,17 @@ li.aate-mobile-menu-item {
       width: 50%; } }
 
 /* Memberpress Plugin Form Styles */
+.mepr-unauthorized-message,
+.mepr-login-form-wrap {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
+
 .mepr-signup-form,
 .mp_login_form,
 .mepr_error {
