@@ -4,13 +4,15 @@
 }
 
 .navbar > .container {
-  align-items: flex-end;
+  align-items: center;
+
+  @include media-breakpoint-up(md) {
+    align-items: flex-end;
+  }
 }
 
 a.navbar-brand {
-  margin: 0 auto;
   padding-bottom: 0;
-
   display: inline-block;
   font-size: 0.85rem;
   &:hover,  &:active, &:focus {
@@ -36,12 +38,6 @@ a.navbar-brand {
     @include media-breakpoint-up(sm) {
       max-width: 180px;
     }
-    @include media-breakpoint-up(md) {
-      max-width: 160px;
-    }    
-    @include media-breakpoint-up(lg) {
-      max-width: 180px;
-    }
   }
 }
 
@@ -51,11 +47,9 @@ a.navbar-brand {
 }
 
 .navbar-toggler {
+  padding: .25rem 0 .25rem .75rem;
   background: none;
   border: none;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.25rem;
 
   &:active,
   &:focus {
