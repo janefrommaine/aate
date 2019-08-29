@@ -3,9 +3,6 @@
   "version": "0.5.5",
   "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "gulp copy-assets"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/holger1411/understrap-child.git"
@@ -25,7 +22,7 @@
   "homepage": "https://understrap.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "del": "^4.1.0",
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.0",
@@ -49,11 +46,10 @@
     "merge2": "^1.2.3",
     "popper.js": "^1.15.0",
     "run-sequence": "^2.2.1",
-    "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
   },
   "devDependencies": {
-    "@frctl/fractal": "^1.1.7",
+    "@frctl/fractal": "^1.2.0",
     "eslint": "^5.16.0"
   }
 }

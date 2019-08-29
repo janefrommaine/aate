@@ -1,58 +1,99 @@
 /* Memberpress Plugin Form Styles */
-
-body:not(.page-template-aate-account) {
-    .mp_wrapper {
-        @extend .row;
-    }
-}
-
-.mepr-unauthorized-message,
-.mepr-login-form-wrap {
+.mepr-unauthorized-message {
     @include make-col-ready();
     @include make-col(12);
 }
 
 .mepr-signup-form, 
 .mp_login_form,
-.mepr_error {
-    @include make-col-ready();
-    @include make-col(12);
-    @include media-breakpoint-up(lg) {
-        @include make-col(6);
-    }    
+.mepr_loginform {
+    width: 50%;
+    max-width: 50%;
 }
 
 .mp_login_form form {
     width: 100%;
 }
 
+.mp-spacer {
+    display: none;
+}
+
+.mepr-login-actions {
+    margin-top: 1rem;
+}
+
+/* Form Styles  */
+
+.mp_wrapper .mp-form-row {
+    margin-bottom: 1.5rem;
+}
+
+/* Form Validation Styles  */
+.mepr_error,
+.mepr-unauthorized-message {
+    color: $danger;
+    background-color: lighten($danger, 40%) !important;
+    border: 1px solid $danger !important;
+}
+
+.mp_wrapper .mepr-form-has-errors, 
+.mp_wrapper .cc-error {
+    color: $danger;
+}
+
+.mp_wrapper .mepr-form-has-errors {
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+.mepr-form {
+    input.invalid,
+    select.invalid,
+    textarea.invalid,
+    label.mepr-checkbox-field.invalid,
+    div.mepr-checkboxes-field.invalid,
+    div.mepr-radios-field.invalid {
+        border: 1px solid $danger !important;
+        background-color: initial !important;
+    }
+}
+
+.mp-form-label .cc-error {
+    //display: block;
+    font-size: 0.825rem;
+    padding: 0;
+    @include media-breakpoint-up(lg) {
+        float: right;
+    }
+}
+
 /* Memberpress Plugin Account Styles */
 
-.page-template-aate-account { 
-    
-    .row .mp_wrapper {
-        @include make-col-ready();
-        @include make-col(12);
-        margin-bottom: 2rem;   
-
-        @include media-breakpoint-up(lg) {
-            @include make-col(3);
-        }
+.page-template-aate-account .aate-hero {
+    @include media-breakpoint-down(md) {
+        margin-bottom: 0;
     }
-    .row > .mp_wrapper ~ .mp_wrapper {
+}
+
+.page-template-aate-account { 
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .row > .mp_wrapper ~ .mp_wrapper,
+    .mp-no-subs {
+        @include make-col-ready();
         @include make-col(12);
 
         @include media-breakpoint-up(lg) {
             @include make-col(9);
         }
-    }
 
-    // Navigation
-    .row .mp_wrapper:first-child {
-        border-bottom: 5px solid rgba(12,59,136,.08);
-
-        @include media-breakpoint-up(lg) {
-            border-bottom: 0;
+        @include media-breakpoint-down(md) {
+            border-top: 1px solid $gray-300;
+            padding-top: 1rem;
         }
     }
 }
@@ -62,7 +103,7 @@ $accordion-title-color: $body-color;
 $accordion-icon-arrow-transition: transform 0.15s linear;
 
 .aate-account-nav-btn {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: $headings-font-family;
     font-weight: 700;
     padding: .75rem 1rem;
@@ -153,4 +194,63 @@ div#mepr-account-nav:not(.collapsing):not(.show) {
 
 .mepr-account-table thead {
     @extend .thead-light;
+}
+
+/* Corporate Accounts  */
+
+.mpca-fat-bottom {
+    margin-bottom: 1rem;
+}
+
+#mpca_sub_accounts_used h4 {
+    @extend .h6;
+}
+
+#mpca-add-sub-user {
+    border-bottom: 5px solid rgba(12,59,136,.08);
+}
+
+.mepr_suggest_user {
+    margin-bottom: 1rem;
+}
+
+#mpca_signup_url {
+    padding-top: 2rem;
+    border-top: 5px solid rgba(12,59,136,.08);
+}
+
+#mpca-add-sub-user-btn {
+    @extend .btn;
+    @extend .btn-outline-dark;
+}
+
+.mpca-search {
+    padding-top: 1rem;
+}
+
+#mpca-add-sub-user-form {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: $gray-200;
+}
+
+.mpca-sub-account-page-info {
+    font-size: 0.825rem;
+    text-align: right;
+}
+
+.mepr-account-actions,
+.mpca-remove-sub-account {
+    font-size: 0.825rem; 
+}
+
+#mpca_export_sub_accounts {
+    text-align: right;
+
+    a:before {
+        content: "\f019";
+        display: inline-block;
+        font-family: FontAwesome;
+        margin-right: 0.25rem;
+    }
 }

@@ -3,6 +3,7 @@
  * The partial for the hero component & ACF field group
  */
 
+$page_title = isset($page_title) ? $page_title : get_the_title();
 $intro = isset($intro) ? $intro : get_field('hero_intro');
 $image = get_field('hero_image');
 $button_link_type = get_field('hero_button_link_type');
@@ -26,7 +27,7 @@ $button_link_title = get_field('hero_button_link_title');
                 <div class="col-md-10">
             <?php endif; ?>
             
-                <h1><?php the_title(); ?></h1>
+                <h1><?php echo $page_title ?></h1>
                 <?php if($intro): ?>
                     <p class="lead"><?php echo $intro ?></p>
                 <?php endif; ?>
