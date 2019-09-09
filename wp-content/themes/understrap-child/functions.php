@@ -42,3 +42,6 @@ require_once(get_stylesheet_directory() . '/functions/theme-settings.php');
 
 // Register gutenberg blocks with ACF
 require_once(get_stylesheet_directory() . '/functions/acf-blocks.php');
+
+// Memberpress
+require_once(get_stylesheet_directory() . '/functions/memberpress.php');
